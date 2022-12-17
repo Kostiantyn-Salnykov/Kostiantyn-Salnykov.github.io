@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Email",
+    "type": "mailto",
+    "value": "kostiantyn.salnykov@gmail.com",
+    "icon": "fa-solid fa-envelope"
+  },
+  {
+    "name": "LinkedIn",
+    "value": "https://www.linkedin.com/in/navysky/",
+    "icon": "fa-brands fa-linkedin"
+  },
+  {
+    "name": "GitHub",
+    "value": "https://github.com/Kostiantyn-Salnykov",
+    "icon": "fa-brands fa-github"
+  },
+  {
+    "name": "Phone",
+    "type": "tel",
+    "value": "+380 97 853 1216",
+    "icon": "fa-solid fa-mobile-screen"
+  },
+  {
+    "name": "Telegram",
+    "value": "https://t.me/KostNavySky",
+    "icon": "fa-brands fa-telegram"
+  }
+]

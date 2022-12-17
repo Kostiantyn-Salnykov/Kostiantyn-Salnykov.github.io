@@ -1,0 +1,173 @@
+[
+  {
+    "categoryName": "Main technologies",
+    "blocks": [
+      {
+        "blockName": "Programming Languages",
+        "items": [{"name": "Python 3.7+"}]
+      },
+      {
+        "blockName": "Frameworks",
+        "items": [{"name": "FastAPI"}]
+      },
+      {"blockName": "Cloud Technologies", "items": [{"name": "AWS"}]},
+      {
+        "blockName": "Databases",
+        "items": [{"name": "MongoDB"}, {"name": "Redis"}]
+      },
+      {
+        "blockName": "Code Quality",
+        "items": [
+          {"name": "unittest + mock"},
+          {"name": "pytest + pytest-asyncio"},
+          {"name": "Faker"},
+          {"name": "factory_boy"}
+        ]
+      },
+      {
+        "blockName": "Code Style",
+        "items": [{"name": "Black"}, {"name": "isort"}, {"name": "flake8"}, {"name": "pylint"}, {"name": "xenon"}]
+      },
+      {
+        "blockName": "Documentation",
+        "items": [
+          {"name": "MkDocs + Material"},
+          {"name": "diagrams.net (draw.io)"},
+          {"name": "Markdown"},
+          {"name": "Napoleon docstrings (Google Style)"}
+        ]
+      },
+      {
+        "blockName": "Library build tools",
+        "items": [{"name": "Poetry"}, {"name": "pyproject.toml"}]
+      }
+    ]
+  },
+  {
+    "categoryName": "Other Technologies",
+    "blocks": [
+      {
+        "blockName": "Programming Languages",
+        "items": [{"name": "Rust"}]
+      },
+      {
+        "blockName": "Frameworks",
+        "items": [{"name": "Vue.js 3"}, {"name": "Quasar"}, {"name": "Bulma"}, {"name": "DRF"}]
+      },
+      {
+        "blockName": "Tools & Libraries",
+        "items": [
+          {"name": "SQLAlchemy"},
+          {"name": "Alembic"},
+          {"name": "Pydantic"},
+          {"name": "Celery"},
+          {"name": "Docker"},
+          {"name": "docker-compose"},
+          {"name": "JWT"},
+          {"name": "Sentry"}
+        ]
+      },
+      {
+        "blockName": "APIs",
+        "items": [{"name": "Telegram"}, {"name": "Discord"}, {"name": "BankID"}]
+      },
+      {
+        "blockName": "Payment Systems",
+        "items": [{"name": "PayPal"}, {"name": "Twispay"}, {"name": "Nets Payment"}]
+      },
+      {
+        "blockName": "AWS",
+        "items": [
+          {"name": "CLI"},
+          {"name": "AWS CDK"},
+          {"name": "S3"},
+          {"name": "API Gateway"},
+          {"name": "Lambda"},
+          {"name": "Amplify"},
+          {"name": "SAM"},
+          {"name": "Cognito"},
+          {"name": "CloudFormation"},
+          {"name": "ECR + ECS"},
+          {"name": "IAM"},
+          {"name": "CodeCommit"},
+          {"name": "RDS"},
+          {"name": "DynamoDB"},
+          {"name": "Kinesis"},
+          {"name": "ElastiCache"},
+          {"name": "Route 53"},
+          {"name": "CloudFront"},
+          {"name": "CloudWatch"},
+          {"name": "EventBridge"},
+          {"name": "SSM"},
+          {"name": "SES"},
+          {"name": "SQS"}
+        ]
+      },
+      {
+        "blockName": "GCP",
+        "items": [{"name": "Calendar API"}, {"name": "People API"}, {"name": "Open ID Connect"}]
+      }
+    ]
+  },
+  {
+    "categoryName": "Desire to learn",
+    "blocks": [
+      {
+        "blockName": "Programming Languages",
+        "items": [{"name": "JavaScript"}]
+      },
+      {"blockName": "Databases", "items": [{"name": "PostgreSQL"}]},
+      {"blockName": "Cloud Technologies", "items": [{"name": "GCP"}]},
+      {
+        "blockName": "Libraries",
+        "items": [
+          {"name": "Matplotlib"},
+          {"name": "Reportlab"},
+          {"name": "Pandas"},
+          {"name": "Numpy"},
+          {"name": "PyQT 6"}
+        ]
+      }
+    ]
+  },
+  {
+    "categoryName": "Preferences",
+    "blocks": [
+      {
+        "blockName": "Programming Languages",
+        "items": [
+          {"name": "Python 3.7+", "icon": "➕"},
+          {"name": "Rust", "icon": "➕"}
+        ]
+      },
+      {
+        "blockName": "All project types, <u>excluding</u>",
+        "items": [
+          {"name": "Casinos", "icon": "➖"},
+          {"name": "Blockchain", "icon": "➖"},
+          {"name": "Bettings", "icon": "➖"},
+          {"name": "Drugs", "icon": "➖"}
+        ]
+      },
+      {
+        "blockName": "Frameworks",
+        "items": [
+          {"name": "FastAPI", "icon": "➕"},
+          {"name": "Starlette", "icon": "➕"},
+          {"name": "Django", "icon": "➖"},
+          {"name": "Django REST Framework", "icon": "➕➖"},
+          {"name": "Flask", "icon": "➖"},
+          {"name": "Sanic", "icon": "➕➖"}
+        ]
+      },
+      {
+        "blockName": "Databases",
+        "items": [
+          {"name": "MongoDB", "icon": "➕"},
+          {"name": "PostgreSQL", "icon": "➕"},
+          {"name": "Redis", "icon": "➕"}
+        ]
+      }
+    ]
+  }
+]

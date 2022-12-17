@@ -1,0 +1,123 @@
+[
+  {
+    "name": "MongoDB University",
+    "courses": [
+      {
+        "name": "M001: MongoDB Basics (July, 2018)",
+        "image": "courses/M001_proof_of_completion.jpeg",
+        "proofLink": "https://university.mongodb.com/course_completion/23a478f4-7067-47ff-9c20-0a9076a1?utm_source=copy&utm_medium=social&utm_campaign=university_social_sharing"
+      },
+      {
+        "name": "M001: MongoDB Basics (December, 2020)",
+        "image": "courses/M001_proof_of_completion (2020).jpeg",
+        "proofLink": "https://university.mongodb.com/course_completion/64ee85a8-9f85-4d7f-84b9-53dbe2ab2092?utm_source=copy&utm_medium=social&utm_campaign=university_social_sharing"
+      },
+      {
+        "name": "M103: Basic Cluster Administration (February, 2021)",
+        "image": "courses/M103_proof_of_completion.jpeg",
+        "proofLink": "https://university.mongodb.com/course_completion/53984fd2-bf81-4719-b24d-833ddb4b83b3?utm_source=copy&utm_medium=social&utm_campaign=university_social_sharing"
+      },
+      {
+        "name": "M121: The MongoDB Aggregation Framework (December, 2020)",
+        "image": "courses/M121_proof_of_completion.jpeg",
+        "proofLink": "https://university.mongodb.com/course_completion/c674dd74-a7ba-4127-8735-b30dcf6aa384?utm_source=copy&utm_medium=social&utm_campaign=university_social_sharing"
+      },
+      {
+        "name": "M101P: MongoDB for Developers (September, 2018)",
+        "image": "courses/M101P_proof_of_completion.jpeg",
+        "proofLink": "https://university.mongodb.com/course_completion/3115f757-0f41-4fca-bb36-f11b436a?utm_source=copy&utm_medium=social&utm_campaign=university_social_sharing"
+      },
+      {
+        "name": "M220P: MongoDB for Python Developers (February, 2021)",
+        "image": "courses/M220P_proof_of_completion.jpeg",
+        "proofLink": "https://university.mongodb.com/course_completion/78cfe99c-8262-4907-9020-b9841f329e6e?utm_source=copy&utm_medium=social&utm_campaign=university_social_sharing"
+      },
+      {
+        "name": "M201: MongoDB Performance (January, 2021)",
+        "image": "courses/M201_proof_of_completion.jpeg",
+        "proofLink": "https://university.mongodb.com/course_completion/9add8cf1-1d91-4973-9bfc-d712def4291e?utm_source=copy&utm_medium=social&utm_campaign=university_social_sharing"
+      }
+    ]
+  },
+  {
+    "name": "Sololearn",
+    "courses": [
+      {
+        "name": "Python 3 Tutorial",
+        "image": "courses/sololearn/cert-1073-2389177.jpg",
+        "proofLink": "https://www.sololearn.com/Certificate/1073-2389177/jpg/"
+      },
+      {
+        "name": "HTML Fundamentals",
+        "image": "courses/sololearn/cert-1014-2389177.jpg",
+        "proofLink": "https://www.sololearn.com/Certificate/1014-2389177/jpg/"
+      },
+      {
+        "name": "CSS Fundamentals",
+        "image": "courses/sololearn/cert-1023-2389177.jpg",
+        "proofLink": "https://www.sololearn.com/Certificate/1023-2389177/jpg/"
+      },
+      {
+        "name": "JavaScript Tutorial",
+        "image": "courses/sololearn/cert-1024-2389177.jpg",
+        "proofLink": "https://www.sololearn.com/Certificate/1024-2389177/jpg/"
+      },
+      {
+        "name": "SQL Fundamentals",
+        "image": "courses/sololearn/cert-1060-2389177.jpg",
+        "proofLink": "https://www.sololearn.com/Certificate/1060-2389177/jpg/"
+      },
+      {
+        "name": "jQuery Tutorial",
+        "image": "courses/sololearn/cert-1082-2389177.jpg",
+        "proofLink": "https://www.sololearn.com/Certificate/1082-2389177/jpg/"
+      }
+    ]
+  },
+  {
+    "name": "Codecademy",
+    "courses": [
+      {"name": "Learn Python"},
+      {"name": "Learn HTML"},
+      {"name": "Learn CSS"},
+      {
+        "name": "Learn the Command Line",
+        "proofLink": "https://www.codecademy.com/profiles/SalnykovKastiantyn/certificates/c87ba0541f8be78bc2f4ba1128233f6f"
+      },
+      {
+        "name": "Deploy a Website",
+        "proofLink": "https://www.codecademy.com/profiles/SalnykovKastiantyn/certificates/358e250fca144526a6b2934ff44fbc01"
+      },
+      {
+        "name": "Learn Responsive Design",
+        "proofLink": "https://www.codecademy.com/profiles/SalnykovKastiantyn/certificates/3a62023b0054dc793edc0adecd715fd7"
+      }
+    ]
+  },
+  {
+    "name": "Udacity",
+    "courses": [
+      {"name": "How to use Git and GitHub"},
+      {"name": "Designing RESTful APIs (Flask)"},
+      {"name": "Full Stack Foundation (Flask)"},
+      {"name": "Data Wrangling with MongoDB"}
+    ]
+  },
+  {
+    "name": "Udemy",
+    "courses": [
+      {"name": "REST APIs with Flask and Python"},
+      {
+        "name": "Python REST APIs with Flask, Docker, MongoDB, and AWS DevOps"
+      },
+      {
+        "name": "Vue JS 2 - The Complete Guide (incl. Vue Router and Vuex)"
+      },
+      {"name": "The Rust Programming Language"},
+      {"name": "Ultimate Rust Crash Course"},
+      {"name": "Ultimate Rust 2: Intermediate Concepts"},
+      {"name": "Шаблоны проектирования на Python"},
+      {"name": "Raspberry Pi For Beginners - 2022 Complete Course"}
+    ]
+  }
+]

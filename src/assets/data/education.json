@@ -1,0 +1,16 @@
+[
+  {
+    "institutionName": "University of Michigan",
+    "dateRange": "December, 2015 - April, 2016",
+    "title": "Course",
+    "name": "Python for Everybody.",
+    "icon": "fas fa-desktop"
+  },
+  {
+    "institutionName": "Kharkiv Computer and Technology College",
+    "dateRange": "September, 2012 - February, 2016",
+    "title": "Major",
+    "name": "Repair of electrical appliances.",
+    "icon": "fas fa-university"
+  }
+]

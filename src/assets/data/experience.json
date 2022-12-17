@@ -1,0 +1,253 @@
+[
+  {
+    "heading": "Lead Python Software Engineer (Open Source)",
+    "fromDate": "September 2022",
+    "toDate": "Present",
+    "projects": [
+      {
+        "date": "September, 2022",
+        "title": "E-University API",
+        "icon": "fa-solid fa-money-check-dollar",
+        "description": "Open source project aims to help higher education institutions with student accommodation in hostels.",
+        "responsibilities": "Architecture design ideas, technical consultation for the team members, code review.",
+        "usedTechnologies": ["Python 3.8", "Docker", "FastAPI", "SQLAlchemy", "Alembic"]
+      },
+      {
+        "date": "September, 2022",
+        "title": "bankid-asyncio (package)",
+        "icon": "fa-solid fa-money-check-dollar",
+        "description": "Is a BankID client for Python with asyncio support.",
+        "responsibilities": "All stages of development, from reading the technical documentation for BankID, to planning, implementing, testing and publishing the finished library. Also writing technical documentation for the library.",
+        "usedTechnologies": ["Python 3.8", "Python 3.9", "Python 3.10", "httpx", "pydantic", "pytest", "pytest-asyncio"]
+      }
+    ]
+  },
+  {
+    "heading": "Vilmate LLC - Lead Python Software Engineer",
+    "fromDate": "January 2022",
+    "toDate": "Present",
+    "projects": [
+      {
+        "date": "June, 2022",
+        "title": "MuseML (museml.com)",
+        "icon": "fa-solid fa-book",
+        "description": "A platform, that allows professional screenwriters to write, edit, and collaborate on screenplays. MuseML is based on generative machine-learning software with understanding of the creator's actual ideation by powering with smart recommendations writing by auto-suggesting plot ideas, following classic movie and story pattern and tropes, changes in tone and other features.",
+        "responsibilities": "Move existing alpha version of project from Heroku and Vercel to AWS, migrate existing data. Create modular structure for project, refactor existing functional. Add unit tests to project, write technical documentation with Mkdocs-material. Creating all the necessities so that the project can be developed and easily maintained.",
+        "usedTechnologies": [
+          "AWS",
+          "AWS CDK",
+          "ECR",
+          "ECS",
+          "SQS",
+          "AWS Lambda",
+          "FastAPI",
+          "RDS (PostgreSQL)",
+          "Route 53",
+          "SQLAlchemy",
+          "SQL",
+          "Alembic",
+          "pytest-asyncio",
+          "MkDocs-Material"
+        ]
+      },
+      {
+        "date": "January 2022",
+        "title": "Best Driver",
+        "icon": "fa-solid fa-map-location-dot",
+        "description": "Product for a delivery company in Sweden. Back-end for mobile application.",
+        "responsibilities": "Technical consultation and support (provide architectural ideas and solutions), code review.",
+        "usedTechnologies": ["Python 3.9", "AWS", "ElastiCache", "ECR", "ECS", "RDS"]
+      }
+    ]
+  },
+  {
+    "heading": "Vilmate LLC - Python Software Engineer",
+    "fromDate": "March 2020",
+    "toDate": "January 2022",
+    "projects": [
+      {
+        "date": "October, 2021",
+        "title": "AMP Energy",
+        "icon": "fa-solid fa-plug-circle-check",
+        "description": "A platform for analyzing data from IoT devices for charts and events monitoring.",
+        "responsibilities": "Build serverless architecture with AWS, prepare database schema, planning, estimation and development, make requirements for the project. Implementation of the tariff calculation system.",
+        "usedTechnologies": ["Python 3.9", "AWS", "SQLAlchemy", "Alembic", "Pydantic", "SQL", "Pandas"]
+      },
+      {
+        "date": "April, 2021",
+        "title": "Flow Hospitality (MAPAL group)",
+        "icon": "fa-solid fa-utensils",
+        "description": "A platform that provides services to companies to assist in employee training and employee career development.",
+        "responsibilities": "Creation of application functionality for a career map of a company with several career paths and career opportunities (jobs). Modeling database schema for a given application, creating an API for working with the application.",
+        "usedTechnologies": ["Python 2.7", "Django 1.11", "MySQL"]
+      },
+      {
+        "date": "February, 2021",
+        "title": "Time tracking (Internal project)",
+        "icon": "fa-solid fa-business-time",
+        "description": "Service for work progress tracking.",
+        "responsibilities": "Creation of a service where company employees can fill out progress reports.",
+        "usedTechnologies": ["Python 3.7", "Django REST framework", "PostgreSQL", "Redis"]
+      },
+      {
+        "date": "January, 2021",
+        "title": "Plegium (plegium.se)",
+        "icon": "fa-solid fa-cart-shopping",
+        "description": "The project is related to the production and sale of smart pepper sprays for self-defense.",
+        "responsibilities": "Creation of an application for insurance subscriptions (implementation of subsequent payments).",
+        "usedTechnologies": ["Python 3.8", "Django REST framework", "PostgreSQL", "Celery", "Redis", "Nets API"]
+      },
+      {
+        "date": "April, 2020",
+        "title": "CSI Tax Portal (NAV Solutions)",
+        "icon": "fa-solid fa-file-invoice-dollar",
+        "description": "Tax rating portal which integrates with accounting services.",
+        "responsibilities": "Architecture solutions of the Back-end side of the portal. Working with asynchronous programming. Integration with tax rating services.",
+        "usedTechnologies": [
+          "Python 3.8",
+          "asyncio",
+          "FastAPI",
+          "MongoDB",
+          "motor",
+          "Atlas",
+          "Compass",
+          "Redis",
+          "Celery",
+          "factory_boy",
+          "unittest + mock",
+          "Faker"
+        ]
+      },
+      {
+        "date": "March, 2020",
+        "title": "City Dashboard",
+        "icon": "fa-solid fa-city",
+        "description": "Collecting and formatting data from urban and municipal services.",
+        "responsibilities": "Integrate with several services, collect data, and aggregate it for reports. Working with Excel files (generating, collecting).",
+        "usedTechnologies": [
+          "Python 3.8",
+          "Django 3.0",
+          "Django REST framework",
+          "PostgreSQL",
+          "Redis",
+          "Celery",
+          "factory_boy",
+          "unittest + mock",
+          "Faker"
+        ]
+      }
+    ]
+  },
+  {
+    "heading": "Boosteroid LLC - Python Software Engineer",
+    "fromDate": "May, 2019",
+    "toDate": "February, 2020",
+    "projects": [
+      {
+        "date": "May, 2019",
+        "title": "Boosteroid",
+        "icon": "fa-solid fa-gamepad",
+        "description": "Cloud Gaming Service (PaaS).",
+        "responsibilities": "Architect solutions of Back-end side of service, unit-testing, working with a payment system (subscription implementation), optimization of database queries.",
+        "usedTechnologies": [
+          "Python 3",
+          "Django",
+          "Django REST framework",
+          "PayPal API",
+          "Twispay API",
+          "Redis",
+          "Celery",
+          "PostgreSQL",
+          "factory_boy",
+          "unittest + mock",
+          "Faker"
+        ]
+      }
+    ]
+  },
+  {
+    "heading": "DDI Development - Full-Stack Developer",
+    "fromDate": "October, 2018",
+    "toDate": "December, 2018",
+    "projects": [
+      {
+        "date": "October, 2018",
+        "title": "Maisie",
+        "icon": "fa-solid fa-cart-shopping",
+        "description": "Marketing platform with widgets and bots for e-commerce solutions.",
+        "responsibilities": "Refactoring of Python 3.5 code, developing new features and updating existing functionality, integration with Facebook Messenger API.",
+        "usedTechnologies": ["Python 3.5", "Django", "JavaScript", "Facebook Messenger API"]
+      }
+    ]
+  },
+  {
+    "heading": "CHI Software - Junior Python Developer",
+    "fromDate": "March, 2018",
+    "toDate": "October, 2018",
+    "projects": [
+      {
+        "date": "August, 2018",
+        "title": "Under NDA",
+        "icon": "fa-solid fa-car-side",
+        "description": "The system of services for vehicle dealers (analyzing data/serving data).",
+        "responsibilities": "Creation of complex SQL queries for generating reports, creation of REST API for mobile add-ons, database modeling.",
+        "usedTechnologies": ["Python 3.7", "SQL", "PostgeSQL", "Docker", "unittest"]
+      },
+      {
+        "date": "July, 2018",
+        "title": "Zakaz.ua",
+        "icon": "fa-solid fa-cart-shopping",
+        "description": "The wide system of food delivery based on several sites and services.",
+        "responsibilities": "Refactoring of Python 2.7 code for an upgrade to Python 3, fix Back-end side issues from Sentry.",
+        "usedTechnologies": ["Python 2.7", "Python 3", "Django 1.3", "Django 2.0", "Sentry"]
+      },
+      {
+        "date": "March, 2018",
+        "title": "Outbizzed",
+        "icon": "fa-solid fa-calendar-days",
+        "description": "Back-end for iOS and Android apps for group meetings planning. A user registers in the app and then synchronizes it with his/her Google Calendar. They could receive data regarding free slots of time for the planning of their meetings. The user could create events with particular members, information and time, which are convenient for him. Invited users have a possibility to vote for the time that works for them. If all users agree, the status changes from “planning” to “approved”. There are settings with rules for each member. Also, users allow receiving the information from Google API for calendars/events/contacts.",
+        "responsibilities": "Create RESTful API for iOS and Android developers.",
+        "usedTechnologies": ["Python 3.6", "Django 2.0", "Django REST framework", "Google API", "OAuth 2.0"]
+      }
+    ]
+  },
+  {
+    "heading": "Next Chain - Junior Full-Stack Developer",
+    "fromDate": "November, 2017",
+    "toDate": "March, 2018",
+    "projects": [
+      {
+        "date": "November, 2017",
+        "title": "ICO site for e-Chat",
+        "icon": "fab fa-bitcoin",
+        "description": "Developing a website, created to invite investors for the further development of the application.",
+        "responsibilities": "Editing and customizing the admin panel, creating forms and news feed.",
+        "usedTechnologies": [
+          "Django 1.9",
+          "Django 2.0",
+          "PostgreSQL",
+          "Docker",
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Bootstrap 4"
+        ]
+      }
+    ]
+  },
+  {
+    "heading": "Torgus GmbH - Database administrator and content manager (JTL-Wawi)",
+    "fromDate": "July, 2016",
+    "toDate": "March, 2017",
+    "projects": [
+      {
+        "date": "July, 2016",
+        "title": "Torgus GmbH",
+        "icon": "fas fa-database",
+        "description": "Production of wall paintings, sales through Amazon service.",
+        "responsibilities": "Filling the database with products, filling in prices. Used Python to automate routine tasks, working .csv files, generate folders, create clickers.",
+        "usedTechnologies": ["Python 3"]
+      }
+    ]
+  }
+]
