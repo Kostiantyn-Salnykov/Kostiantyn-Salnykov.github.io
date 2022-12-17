@@ -1,16 +1,16 @@
 <template>
   <!--  Main site-->
-  <section class="section has-background-black has-text-white py-1 is-hidden-print">
+  <section class="section has-background-black has-text-white pt-3 pb-1 is-hidden-print">
     <div class="buttons">
-      <button class="button is-small is-responsive is-danger" @click="showPrintModal = true">
+      <button class="button is-responsive is-danger" @click="showPrintModal = true">
         <span class="icon is-small"><i class="fa-solid fa-print"></i></span>
         <span>Print</span>
       </button>
-      <button class="button is-small is-responsive is-success" v-if="showPhoto" @click="showPhoto = !showPhoto">
+      <button class="button is-responsive is-success" v-if="showPhoto" @click="showPhoto = !showPhoto">
         <span class="icon is-small"><i class="fa-solid fa-qrcode"></i></span>
         <span>QR Code</span>
       </button>
-      <button class="button is-small is-responsive is-link" v-else @click="showPhoto = !showPhoto">
+      <button class="button is-responsive is-link" v-else @click="showPhoto = !showPhoto">
         <span class="icon is-small"><i class="fa-solid fa-image"></i></span>
         <span>Photo</span>
       </button>
@@ -24,11 +24,13 @@
         </header>
         <section class="modal-card-body has-text-black is-flex is-flex-direction-column">
           <div class="content">
-            <p  class="has-text-justified">
+            <p class="has-text-justified">
               To be honest, I don't have a desire to work for a company in the 21st century where people still print
               resumes.
             </p>
-            <p class="has-text-justified">It's better to open this page via QR Code and read it without using paper for it.</p>
+            <p class="has-text-justified">
+              It's better to open this page via QR Code and read it without using paper for it.
+            </p>
           </div>
           <QrcodeVue :value="cvURL" :size="200" render-as="svg" class="has-text-centered is-align-self-center" />
         </section>
@@ -114,7 +116,7 @@
         <div class="content">
           <p class="title has-text-link mb-1">About Me</p>
           <template v-for="paragraph in paragraphs" :key="paragraph">
-            <p class="has-text-justified" v-html="paragraph"></p>
+            <p class="indent has-text-justified" v-html="paragraph"></p>
           </template>
         </div>
       </div>

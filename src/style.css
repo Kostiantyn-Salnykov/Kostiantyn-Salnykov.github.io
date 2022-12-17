@@ -5,6 +5,10 @@
   cursor: ew-resize;
 }
 
+p.indent {
+  text-indent: 1.5em;
+}
+
 @media print {
   abbr[title]:after {
     content: " (" attr(title) ")";

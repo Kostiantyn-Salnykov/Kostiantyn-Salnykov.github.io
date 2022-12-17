@@ -57,6 +57,10 @@
       {
         "blockName": "Tools & Libraries",
         "items": [
+          {"name": "Cargo"},
+          {"name": "Vite"},
+          {"name": "ESLint"},
+          {"name": "Prettier"},
           {"name": "SQLAlchemy"},
           {"name": "Alembic"},
           {"name": "Pydantic"},
@@ -116,18 +120,19 @@
         "blockName": "Programming Languages",
         "items": [{"name": "JavaScript"}]
       },
-      {"blockName": "Databases", "items": [{"name": "PostgreSQL"}]},
-      {"blockName": "Cloud Technologies", "items": [{"name": "GCP"}]},
       {
-        "blockName": "Libraries",
+        "blockName": "Tools & Libraries",
         "items": [
+          {"name": "WebAssembly"},
           {"name": "Matplotlib"},
           {"name": "Reportlab"},
           {"name": "Pandas"},
           {"name": "Numpy"},
           {"name": "PyQT 6"}
         ]
-      }
+      },
+      {"blockName": "Databases", "items": [{"name": "PostgreSQL (in depth)"}]},
+      {"blockName": "Cloud Technologies", "items": [{"name": "GCP"}]}
     ]
   },
   {
@@ -141,12 +146,26 @@
         ]
       },
       {
-        "blockName": "All project types, <u>excluding</u>",
+        "blockName": "Interesting in",
         "items": [
-          {"name": "Casinos", "icon": "➖"},
-          {"name": "Blockchain", "icon": "➖"},
-          {"name": "Bettings", "icon": "➖"},
-          {"name": "Drugs", "icon": "➖"}
+          {"name": "Financial", "icon": "🏦"},
+          {"name": "Open source", "icon": "🔓🖥"},
+          {"name": "Commercial", "icon": "🏬"},
+          {"name": "IoT", "icon": "🔌"},
+          {"name": "Automation", "icon": "⌨🖱"},
+          {"name": "ETL", "icon": "🗃"},
+          {"name": "High-Load", "icon": "🗄"},
+          {"name": "AWS", "icon": "☁"}
+        ]
+      },
+      {
+        "blockName": "<b>Not</b> interesting in",
+        "items": [
+          {"name": "Casinos", "icon": "🎰"},
+          {"name": "Blockchain", "icon": "🧱⛓"},
+          {"name": "Betting", "icon": "🃏⚽"},
+          {"name": "Drugs", "icon": "💊"},
+          {"name": "Weapons", "icon": "🔫🚀"}
         ]
       },
       {
