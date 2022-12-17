@@ -1,6 +1,6 @@
 <template>
   <!--  Main site-->
-  <section class="section has-background-black has-text-white mt-0 pt-3 is-hidden-print">
+  <section class="section has-background-black has-text-white py-1 is-hidden-print">
     <div class="buttons">
       <button class="button is-small is-responsive is-danger" @click="showPrintModal = true">
         <span class="icon is-small"><i class="fa-solid fa-print"></i></span>
@@ -19,16 +19,16 @@
       <div class="modal-background" @click="showPrintModal = false"></div>
       <div class="modal-card">
         <header class="modal-card-head">
-          <p class="modal-card-title" v-html="'Are you sure you want to <s>print resume</s> cut a tree?'"></p>
+          <p class="modal-card-title has-text-black">Print resume</p>
           <button class="delete" aria-label="close" @click="showPrintModal = false"></button>
         </header>
         <section class="modal-card-body has-text-black is-flex is-flex-direction-column">
           <div class="content">
-            <p>
+            <p  class="has-text-justified">
               To be honest, I don't have a desire to work for a company in the 21st century where people still print
               resumes.
             </p>
-            <p>It's better to open this page via QR Code and read it without using paper for it.</p>
+            <p class="has-text-justified">It's better to open this page via QR Code and read it without using paper for it.</p>
           </div>
           <QrcodeVue :value="cvURL" :size="200" render-as="svg" class="has-text-centered is-align-self-center" />
         </section>
@@ -110,19 +110,17 @@
         <div class="title has-text-link has-text-centered">{{ fullName }}</div>
         <div class="subtitle has-text-primary has-text-centered" v-html="position"></div>
       </div>
-      <div class="columns is-gapless">
-        <div class="column">
-          <div class="content">
-            <p class="title has-text-link mb-1">About Me</p>
-            <template v-for="paragraph in paragraphs" :key="paragraph">
-              <p v-html="paragraph"></p>
-            </template>
-          </div>
+      <div class="column">
+        <div class="content">
+          <p class="title has-text-link mb-1">About Me</p>
+          <template v-for="paragraph in paragraphs" :key="paragraph">
+            <p class="has-text-justified" v-html="paragraph"></p>
+          </template>
         </div>
       </div>
     </div>
   </section>
-  <section class="section has-background-black has-text-white mt-0 pt-0 is-hidden-print">
+  <section class="section has-background-black has-text-white py-1 is-hidden-print">
     <div class="columns is-gapless is-multiline">
       <div class="column is-full-mobile is-one-third-tablet is-one-quarter-desktop">
         <div class="content">
@@ -185,12 +183,12 @@
       </div>
     </div>
   </section>
-  <section class="section has-background-black has-text-white mt-0 pt-0 is-hidden-print">
+  <section class="section has-background-black has-text-white py-1 is-hidden-print">
     <div class="title has-text-link mb-1">Technologies</div>
     <div class="columns is-gapless is-multiline is-mobile">
       <template v-for="category in technologies" :key="category.categoryName">
         <div class="column is-full-mobile is-half-tablet is-one-quarter-desktop">
-          <div class="title is-size-4 has-text-link">
+          <div class="title is-size-4 has-text-link mb-0">
             {{ category.categoryName }}
           </div>
           <div class="content">
@@ -207,11 +205,11 @@
       </template>
     </div>
   </section>
-  <section class="section has-background-black has-text-white mt-0 pt-0 is-hidden-print">
+  <section class="section has-background-black has-text-white py-1 is-hidden-print">
     <div class="title has-text-link">Experience</div>
     <div class="columns is-flex is-flex-direction-column">
       <template v-for="exp in experience" :key="exp">
-        <div class="box has-background-black">
+        <div class="column has-background-black">
           <div class="title is-size-4 has-text-link">{{ exp.heading }}</div>
           <div class="subtitle is-6 has-text-white">({{ exp.fromDate }} - {{ exp.toDate }})</div>
           <div class="columns is-flex is-flex-wrap-wrap">
@@ -227,7 +225,7 @@
                   <div class="is-size-6 mb-2">{{ project.date }}</div>
                   <div class="is-size-6 mb-2"><u>Description</u>: {{ project.description }}</div>
                   <div class="is-size-6 mb-2"><u>Responsibilities</u>: {{ project.responsibilities }}</div>
-                  <div class="">
+                  <div>
                     <u>Used technologies</u>:
                     <template v-for="tech in project.usedTechnologies" :key="tech">
                       <span class="tag is-link is-rounded">{{ tech }}</span>
@@ -241,7 +239,7 @@
       </template>
     </div>
   </section>
-  <section class="section has-background-black has-text-white mt-0 pt-0 is-hidden-print">
+  <section class="section has-background-black has-text-white py-1 is-hidden-print">
     <div class="title has-text-link">Education</div>
     <div class="columns">
       <template v-for="institution in education" :key="institution.institutionName">
@@ -261,7 +259,7 @@
       </template>
     </div>
   </section>
-  <section class="section has-background-black has-text-white mt-0 pt-0 is-hidden-print">
+  <section class="section has-background-black has-text-white py-1 is-hidden-print">
     <div class="title has-text-link">Additional Courses</div>
     <div class="columns is-multiline is-mobile">
       <template v-for="platform in courses" :key="platform.name">
