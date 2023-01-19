@@ -150,7 +150,7 @@
         "title": "CSI Tax Portal (NAV Solutions)",
         "icon": "fa-solid fa-file-invoice-dollar",
         "description": "Tax rating portal which integrates with accounting services.",
-        "responsibilities": "Made architecture solutions of the Back-end side of the service. Working with asynchronous programming. Integration with tax rating services. Wrote over 400 tests to cover complex business logic related to finances and invoices. Helped team with authorization and authentication services (JWT based).",
+        "responsibilities": "Made architecture solutions of the Back-end side of the service. Working with asynchronous programming. Integration with tax rating services. Wrote over 400 tests to cover complex business logic related to finances and invoices.",
         "usedTechnologies": [
           "Python 3.8",
           "asyncio",
@@ -196,7 +196,7 @@
         "title": "Boosteroid",
         "icon": "fa-solid fa-gamepad",
         "description": "Cloud Gaming Service (PaaS).",
-        "responsibilities": "Architect solutions of Back-end side of service, unit-testing, working with a payment system (subscription implementation), optimization of database queries.",
+        "responsibilities": "Architect solutions of Back-end side of service, unit-testing, working with a payment system (subscription implementation), optimization of database queries. Helps team to write authorization and authentication services (JWT based).",
         "usedTechnologies": [
           "Python 3",
           "Django",
