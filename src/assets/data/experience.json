@@ -196,7 +196,7 @@
         "title": "Boosteroid",
         "icon": "fa-solid fa-gamepad",
         "description": "Cloud Gaming Service (PaaS).",
-        "responsibilities": "Architect solutions of Back-end side of service, unit-testing, working with a payment system (subscription implementation), optimization of database queries. Helps team to write authorization and authentication services (JWT based).",
+        "responsibilities": "Architect solutions of Back-end side of service, unit-testing, working with a payment system (subscription implementation), optimization of database queries. Helped team to write authorization and authentication services (JWT based).",
         "usedTechnologies": [
           "Python 3",
           "Django",
