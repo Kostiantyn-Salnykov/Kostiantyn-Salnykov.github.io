@@ -10,7 +10,7 @@
         ]
       },
       {
-        "blockName": "<b>Interesting in</b>",
+        "blockName": "<b>Interested in</b>",
         "items": [
           {"name": "Financial", "icon": "🏦"},
           {"name": "Open source", "icon": "🔓🖥"},
@@ -23,7 +23,7 @@
         ]
       },
       {
-        "blockName": "<b>Not interesting in</b>",
+        "blockName": "<b>Not interested in</b>",
         "items": [
           {"name": "Casinos", "icon": "🎰"},
           {"name": "Blockchain", "icon": "🧱⛓"},
