@@ -106,6 +106,9 @@
           "API Gateway",
           "Cognito",
           "S3",
+          "Route 53",
+          "CloudFront",
+          "SES",
           "Lambda",
           "Kinesis",
           "IoT Core",
@@ -266,8 +269,8 @@
         "title": "Outbizzed",
         "icon": "fa-solid fa-calendar-days",
         "description": "Back-end for iOS and Android apps for group meetings planning. A user registers in the app and then synchronizes it with his/her Google Calendar. They could receive data regarding free slots of time for the planning of their meetings. The user could create events with particular members, information and time, which are convenient for him. Invited users have a possibility to vote for the time that works for them. If all users agree, the status changes from “planning” to “approved”. There are settings with rules for each member. Also, users allow receiving the information from Google API for calendars/events/contacts.",
-        "responsibilities": "Create RESTful API for iOS and Android developers.",
-        "usedTechnologies": ["Python 3.6", "Django 2.0", "Django REST framework", "Google API", "OAuth 2.0"]
+        "responsibilities": "Create RESTful API for iOS and Android developers. Refactor existing alpha version of project from Flask and MongoDB to Django and PostgreSQL.",
+        "usedTechnologies": ["Python 3.6", "Django 2.0", "Django REST framework", "Docker", "Google API", "OAuth 2.0", "Flask", "MongoDB", "PostgreSQL"]
       }
     ]
   },
@@ -281,7 +284,7 @@
         "title": "ICO site for e-Chat",
         "icon": "fab fa-bitcoin",
         "description": "Developing a website, created to invite investors for the further development of the application.",
-        "responsibilities": "Editing and customizing the admin panel, creating forms and news feed.",
+        "responsibilities": "Editing and customizing the admin panel, creating forms and news feed. Working with l10n (localization) and i18n (internationalization).",
         "usedTechnologies": [
           "Django 1.9",
           "Django 2.0",
@@ -290,7 +293,8 @@
           "HTML",
           "CSS",
           "JavaScript",
-          "Bootstrap 4"
+          "Bootstrap 4",
+          "Sentry"
         ]
       }
     ]
