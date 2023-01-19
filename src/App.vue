@@ -417,17 +417,7 @@
         </template>
       </div>
     </div>
-    <div
-      class="content"
-      v-show="printOptions['Additional Courses'].value"
-      :class="{
-        'has-page-break-before':
-          printOptions['About Me'].value &&
-          printOptions.Technologies.value &&
-          printOptions.Experience.value &&
-          printOptions.Education.value,
-      }"
-    >
+    <div class="content" v-show="printOptions['Additional Courses'].value">
       <h1 class="title has-text-centered is-size-4 mb-3">Additional Courses</h1>
       <div class="columns is-multiline">
         <template v-for="platform in courses" :key="platform.name">

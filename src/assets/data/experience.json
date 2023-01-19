@@ -9,7 +9,7 @@
         "title": "kostiantyn-salnykov.github.io",
         "icon": "fa-solid fa-address-card",
         "description": "A responsive resume site that is adapted to the printed version.",
-        "responsibilities": "Set up the configuration of Vite, ESLint, Prettier for this project, creating an adaptation for print. Site structure layout with Bulma, Front-end CI creation with GitHub Actions.",
+        "responsibilities": "Set up the configuration of Vite, ESLint, Prettier for this project, creating a dynamic generation for print. Site structure layout with Bulma, Front-end CI creation with GitHub Actions.",
         "usedTechnologies": ["Vue.js 3", "Vite", "Bulma", "GitHub Actions", "ESLint", "Prettier"]
       },
       {
@@ -22,18 +22,29 @@
       },
       {
         "date": "September, 2022",
-        "title": "bankid-asyncio (package)",
+        "title": "bankid-asyncio (PyPi package)",
         "icon": "fa-solid fa-money-check-dollar",
         "description": "Is a BankID client for Python with asyncio support.",
         "responsibilities": "All stages of development, from reading the technical documentation for BankID, to planning, implementing, testing and publishing the finished library. Also writing technical documentation for the library.",
-        "usedTechnologies": ["Python 3.8", "Python 3.9", "Python 3.10", "httpx", "pydantic", "pytest", "pytest-asyncio"]
+        "usedTechnologies": [
+          "Python 3.8",
+          "Python 3.9",
+          "Python 3.10",
+          "httpx",
+          "pydantic",
+          "pytest",
+          "pytest-asyncio",
+          "Poetry",
+          "pyproject.toml",
+          "PyPi"
+        ]
       }
     ]
   },
   {
     "heading": "Vilmate LLC - Lead Python Software Engineer",
     "fromDate": "January 2022",
-    "toDate": "Present",
+    "toDate": "September 2022",
     "projects": [
       {
         "date": "June, 2022",
@@ -47,7 +58,12 @@
           "ECR",
           "ECS",
           "SQS",
+          "Route 53",
+          "ALB",
+          "SES",
           "AWS Lambda",
+          "Chatbot",
+          "CloudWatch",
           "FastAPI",
           "RDS (PostgreSQL)",
           "Route 53",
@@ -63,8 +79,8 @@
         "title": "Best Driver",
         "icon": "fa-solid fa-map-location-dot",
         "description": "Product for a delivery company in Sweden. Back-end for mobile application.",
-        "responsibilities": "Technical consultation and support (provide architectural ideas and solutions), code review.",
-        "usedTechnologies": ["Python 3.9", "AWS", "ElastiCache", "ECR", "ECS", "RDS"]
+        "responsibilities": "Technical consultation and support. Provide architectural ideas and solutions, AWS and container based with AWS ECS (Fargate), code review for critical features.",
+        "usedTechnologies": ["Python 3.9", "AWS", "ElastiCache", "ECR", "ECS", "RDS", "asyncio"]
       }
     ]
   },
@@ -78,23 +94,39 @@
         "title": "AMP Energy",
         "icon": "fa-solid fa-plug-circle-check",
         "description": "A platform for analyzing data from IoT devices for charts and events monitoring.",
-        "responsibilities": "Build serverless architecture with AWS, prepare database schema, planning, estimation and development, make requirements for the project. Implementation of the tariff calculation system.",
-        "usedTechnologies": ["Python 3.9", "AWS", "SQLAlchemy", "Alembic", "Pydantic", "SQL", "Pandas"]
+        "responsibilities": "Build serverless architecture with AWS, design database schema, planning, estimation and development, make requirements for the project. Implementation of the tariff calculation system. Made ETL process using IoT Rule, Kinesis, S3, Lambda and Pandas. Was a lead developer for an international team. Distributed and manage tasks to developers and data engineers from other countries (India, Pakistan, UAE).",
+        "usedTechnologies": [
+          "Python 3.9",
+          "AWS",
+          "Aurora",
+          "API Gateway",
+          "Cognito",
+          "S3",
+          "Lambda",
+          "Kinesis",
+          "IoT Core",
+          "IoT Rule",
+          "SQLAlchemy",
+          "Alembic",
+          "Pydantic",
+          "SQL",
+          "Pandas"
+        ]
       },
       {
         "date": "April, 2021",
         "title": "Flow Hospitality (MAPAL group)",
         "icon": "fa-solid fa-utensils",
         "description": "A platform that provides services to companies to assist in employee training and employee career development.",
-        "responsibilities": "Creation of application functionality for a career map of a company with several career paths and career opportunities (jobs). Modeling database schema for a given application, creating an API for working with the application.",
-        "usedTechnologies": ["Python 2.7", "Django 1.11", "MySQL"]
+        "responsibilities": "Creation of application functionality for a career map of a company with several career paths and career opportunities (jobs). Modeling database schema for a given application, creating an API for working with the application. Worked with a distributed team (customer and staff from Edinburgh).",
+        "usedTechnologies": ["Python 2.7", "Django 1.11", "MySQL", "DRF"]
       },
       {
         "date": "February, 2021",
         "title": "Time tracking (Internal project)",
         "icon": "fa-solid fa-business-time",
         "description": "Service for work progress tracking.",
-        "responsibilities": "Creation of a service where company employees can fill out progress reports.",
+        "responsibilities": "Created of a service where company employees can fill out progress reports. implementation of reports and complex requests for counting hours worked, uploading report data in xlsx. Test coverage of the project and the final coverage in 98%.",
         "usedTechnologies": ["Python 3.7", "Django REST framework", "PostgreSQL", "Redis"]
       },
       {
@@ -102,15 +134,23 @@
         "title": "Plegium (plegium.se)",
         "icon": "fa-solid fa-cart-shopping",
         "description": "The project is related to the production and sale of smart pepper sprays for self-defense.",
-        "responsibilities": "Creation of an application for insurance subscriptions (implementation of subsequent payments).",
-        "usedTechnologies": ["Python 3.8", "Django REST framework", "PostgreSQL", "Celery", "Redis", "Nets API"]
+        "responsibilities": "Created of an application for insurance subscriptions (implemented of subsequent payments with Nets API). Created admin tool to work with insurance subscriptions and users.",
+        "usedTechnologies": [
+          "Python 3.8",
+          "Django REST framework",
+          "PostgreSQL",
+          "Celery",
+          "Redis",
+          "Nets API",
+          "pydantic"
+        ]
       },
       {
         "date": "April, 2020",
         "title": "CSI Tax Portal (NAV Solutions)",
         "icon": "fa-solid fa-file-invoice-dollar",
         "description": "Tax rating portal which integrates with accounting services.",
-        "responsibilities": "Architecture solutions of the Back-end side of the portal. Working with asynchronous programming. Integration with tax rating services.",
+        "responsibilities": "Made architecture solutions of the Back-end side of the service. Working with asynchronous programming. Integration with tax rating services. Wrote over 400 tests to cover complex business logic related to finances and invoices. Helped team with authorization and authentication services (JWT based).",
         "usedTechnologies": [
           "Python 3.8",
           "asyncio",
@@ -131,7 +171,7 @@
         "title": "City Dashboard",
         "icon": "fa-solid fa-city",
         "description": "Collecting and formatting data from urban and municipal services.",
-        "responsibilities": "Integrate with several services, collect data, and aggregate it for reports. Working with Excel files (generating, collecting).",
+        "responsibilities": "I wrote a service that was interval-synchronized with the city service for processing and preparing data for reports. A convenient administration panel has been created. Working with Excel files (generating, collecting).",
         "usedTechnologies": [
           "Python 3.8",
           "Django 3.0",
@@ -183,8 +223,16 @@
         "title": "Maisie",
         "icon": "fa-solid fa-cart-shopping",
         "description": "Marketing platform with widgets and bots for e-commerce solutions.",
-        "responsibilities": "Refactoring of Python 3.5 code, developing new features and updating existing functionality, integration with Facebook Messenger API.",
-        "usedTechnologies": ["Python 3.5", "Django", "JavaScript", "Facebook Messenger API"]
+        "responsibilities": "Refactoring of Python 3.5 code, developing new features (integration with Facebook Messenger API) and updating existing functionality (fix Django forms, templates and .css styles).",
+        "usedTechnologies": [
+          "Python 3.5",
+          "Django",
+          "JavaScript",
+          "Facebook Messenger API",
+          "Django templates",
+          "JavaScript",
+          "CSS"
+        ]
       }
     ]
   },
@@ -198,7 +246,7 @@
         "title": "Under NDA",
         "icon": "fa-solid fa-car-side",
         "description": "The system of services for vehicle dealers (analyzing data/serving data).",
-        "responsibilities": "Creation of complex SQL queries for generating reports, creation of REST API for mobile add-ons, database modeling.",
+        "responsibilities": "Created of complex SQL queries for generating reports, helped with ETL process, created of REST API for mobile add-ons, database modeling. Wrote tests using unittest module.",
         "usedTechnologies": ["Python 3.7", "SQL", "PostgeSQL", "Docker", "unittest"]
       },
       {
@@ -253,8 +301,8 @@
         "title": "Torgus GmbH",
         "icon": "fas fa-database",
         "description": "Production of wall paintings, sales through Amazon service.",
-        "responsibilities": "Filling the database with products, filling in prices. Used Python to automate routine tasks, working .csv files, generate folders, create clickers.",
-        "usedTechnologies": ["Python 3"]
+        "responsibilities": "Filling the database with products, filling in prices. Used Python to automate routine tasks (working .csv files, autogenerate folders structures, create clickers). Created GUIs applications to automate working processes.",
+        "usedTechnologies": ["Python 3", "csv", "PyInstaller", "tkinter"]
       }
     ]
   }
