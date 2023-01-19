@@ -110,7 +110,7 @@
           </div>
         </div>
         <div class="title has-text-link has-text-centered">{{ fullName }}</div>
-        <div class="subtitle has-text-primary has-text-centered" v-html="position"></div>
+        <div class="subtitle is-size-4 has-text-primary has-text-centered" v-html="position"></div>
       </div>
       <div class="column">
         <div class="content">
