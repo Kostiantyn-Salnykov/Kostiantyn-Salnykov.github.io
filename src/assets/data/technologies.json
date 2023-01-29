@@ -3,52 +3,37 @@
     "categoryName": "Preferences",
     "blocks": [
       {
-        "blockName": "Programming Languages",
-        "items": [
-          {"name": "Python 3.7+", "icon": "➕"},
-          {"name": "Rust", "icon": "➕"}
-        ]
-      },
-      {
         "blockName": "<b>Interested in</b>",
         "items": [
-          {"name": "Financial", "icon": "🏦"},
-          {"name": "Open source", "icon": "🔓🖥"},
-          {"name": "Commercial", "icon": "🏬"},
-          {"name": "IoT", "icon": "🔌"},
-          {"name": "Automation", "icon": "⌨🖱"},
-          {"name": "ETL", "icon": "🗃"},
-          {"name": "High-Load", "icon": "🗄"},
-          {"name": "AWS", "icon": "☁"}
+          {"name": "Financial", "icon": "\uD83C\uDFE6"},
+          {"name": "Open source", "icon": "\uD83D\uDD13\uD83D\uDDA5️"},
+          {"name": "Commercial", "icon": "\uD83C\uDFE2"},
+          {"name": "IoT", "icon": "\uD83D\uDD0C"},
+          {"name": "Automation", "icon": "⌨️\uD83D\uDDB1️"},
+          {"name": "ETL", "icon": "\uD83D\uDDC3️"},
+          {"name": "High-Load", "icon": "\uD83D\uDDC4️"},
+          {"name": "AWS", "icon": "☁️"},
+          {"name": "Python 3.7+", "icon": "\uD83D\uDC0D"},
+          {"name": "Rust", "icon": "\uD83E\uDD80"},
+          {"name": "FastAPI", "icon": ""},
+          {"name": "Starlette", "icon": ""},
+          {"name": "Sanic", "icon": ""},
+          {"name": "MongoDB", "icon": ""},
+          {"name": "PostgreSQL", "icon": ""},
+          {"name": "Redis", "icon": ""}
         ]
       },
       {
         "blockName": "<b>Not interested in</b>",
         "items": [
-          {"name": "Casinos", "icon": "🎰"},
-          {"name": "Blockchain", "icon": "🧱⛓"},
-          {"name": "Betting", "icon": "🃏⚽"},
-          {"name": "Drugs", "icon": "💊"},
-          {"name": "Weapons", "icon": "🔫🚀"}
-        ]
-      },
-      {
-        "blockName": "Frameworks",
-        "items": [
-          {"name": "FastAPI", "icon": "➕"},
-          {"name": "Starlette", "icon": "➕"},
-          {"name": "Django", "icon": "➖"},
-          {"name": "Django REST Framework", "icon": "➕➖"},
-          {"name": "Flask", "icon": "➖"},
-          {"name": "Sanic", "icon": "➕➖"}
-        ]
-      },
-      {
-        "blockName": "Databases",
-        "items": [
-          {"name": "MongoDB", "icon": "➕"},
-          {"name": "PostgreSQL", "icon": "➕"},
-          {"name": "Redis", "icon": "➕"}
+          {"name": "Casinos", "icon": "\uD83C\uDFB0"},
+          {"name": "Blockchain", "icon": "\uD83E\uDDF1⛓️"},
+          {"name": "Betting", "icon": "\uD83C\uDCCF⚽"},
+          {"name": "Drugs", "icon": "\uD83D\uDC8A"},
+          {"name": "Weapons", "icon": "\uD83D\uDD2B\uD83D\uDE80"},
+          {"name": "Django", "icon": ""},
+          {"name": "Django REST Framework", "icon": ""},
+          {"name": "Flask", "icon": ""}
         ]
       }
     ]

@@ -1,5 +1,4 @@
 [
-  {"name": "English", "icon": "🇬🇧", "level": "B1 (Intermediate)"},
-  {"name": "Ukrainian", "icon": "🇺🇦", "level": "B2 (Upper Intermediate)"},
-  {"name": "Russian", "icon": "🇷🇺", "level": "C1 (Pre-advanced)"}
+  {"name": "English", "icon": "\uD83C\uDDEC\uD83C\uDDE7", "level": "B1 (Intermediate)"},
+  {"name": "Ukrainian", "icon": "\uD83C\uDDFA\uD83C\uDDE6", "level": "B2 (Upper Intermediate)"}
 ]

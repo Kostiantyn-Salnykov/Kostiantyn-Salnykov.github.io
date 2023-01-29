@@ -2,7 +2,7 @@
   {
     "name": "Work type",
     "icon": "fa-solid fa-briefcase",
-    "value": "full-time remote, part-time remote"
+    "value": "Remote full/part-time"
   },
   {"name": "Timezone", "icon": "fa-solid fa-clock", "value": "Europe/Kyiv"},
   {

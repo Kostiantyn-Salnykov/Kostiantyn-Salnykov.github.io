@@ -75,6 +75,7 @@
     ]
   },
   {
+    "simpleList": true,
     "name": "Codecademy",
     "courses": [
       {"name": "Learn Python"},
@@ -95,6 +96,7 @@
     ]
   },
   {
+    "simpleList": true,
     "name": "Udacity",
     "courses": [
       {"name": "How to use Git and GitHub"},
@@ -104,6 +106,7 @@
     ]
   },
   {
+    "simpleList": true,
     "name": "Udemy",
     "courses": [
       {"name": "REST APIs with Flask and Python"},
