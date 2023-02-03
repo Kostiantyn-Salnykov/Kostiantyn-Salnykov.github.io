@@ -5,23 +5,33 @@
     "toDate": "Present",
     "projects": [
       {
-        "date": "December, 2022",
+        "date": "December 2022",
         "title": "kostiantyn-salnykov.github.io",
         "icon": "fa-solid fa-lg fa-address-card",
         "description": "A responsive resume site that is adapted to the printed version.",
-        "responsibilities": "Set up the configuration of Vite, ESLint, Prettier for this project, creating a dynamic generation for print. Site structure layout with Bulma, Front-end CI creation with GitHub Actions.",
-        "usedTechnologies": ["Vue.js 3", "Vite", "Bulma", "GitHub Actions", "ESLint", "Prettier"]
+        "responsibilities": "Set up the configuration of Vite, ESLint, Prettier for this project, creating a dynamic generation for print. Site structure layout with Bulma, Front-end CI creation with GitHub Workflows.",
+        "usedTechnologies": ["Vue.js 3", "Vite", "Bulma", "GitHub Actions", "ESLint", "Prettier"],
+        "teamSize": "1",
+        "positionInTeam": "Lead Software Engineer",
+        "customer": "\uD83C\uDDFA\uD83C\uDDE6 (Ukraine)",
+        "domain": "Technical biography, CV.",
+        "achieved": ["front-end skills", "print adaptation", "configure linters & formatters"]
       },
       {
-        "date": "September, 2022",
+        "date": "September 2022",
         "title": "E-University API",
         "icon": "fa-solid fa-lg fa-graduation-cap",
         "description": "Open source project aims to help higher education institutions with student accommodation in hostels.",
         "responsibilities": "Architecture design ideas, technical consultation for the team members, code review.",
-        "usedTechnologies": ["Python 3.8", "Docker", "FastAPI", "SQLAlchemy", "Alembic"]
+        "usedTechnologies": ["Python 3.8", "Docker", "FastAPI", "SQLAlchemy", "Alembic", "pytest"],
+        "teamSize": "10-20",
+        "positionInTeam": "Lead Software Engineer, Technical Consultant, Mentor",
+        "customer": "\uD83C\uDDFA\uD83C\uDDE6 (Ukraine)",
+        "domain": "Education",
+        "achieved": ["team lead skills", "mentorship"]
       },
       {
-        "date": "September, 2022",
+        "date": "September 2022",
         "title": "bankid-asyncio (PyPi package)",
         "icon": "fa-solid fa-lg fa-money-check-dollar",
         "description": "Is a BankID client for Python with asyncio support.",
@@ -35,7 +45,12 @@
           "Poetry",
           "pyproject.toml",
           "PyPi"
-        ]
+        ],
+        "teamSize": "1",
+        "positionInTeam": "Lead Software Engineer",
+        "customer": "\uD83C\uDDFA\uD83C\uDDE6 (Ukraine), \uD83C\uDDF8\uD83C\uDDEA (Sweden)",
+        "domain": "Finance",
+        "achieved": ["publish PyPi library", "open source", "testing with tox (for multiple Python's versions)", "CI with GitHub Workflows (Actions)"]
       }
     ]
   },
@@ -45,11 +60,11 @@
     "toDate": "September 2022",
     "projects": [
       {
-        "date": "June, 2022",
+        "date": "June 2022",
         "title": "MuseML (museml.com)",
         "icon": "fa-solid fa-lg fa-book",
-        "description": "A platform, that allows professional screenwriters to write, edit, and collaborate on screenplays. MuseML is based on generative machine-learning software with understanding of the creator's actual ideation by powering with smart recommendations writing by auto-suggesting plot ideas, following classic movie and story pattern and tropes, changes in tone and other features.",
-        "responsibilities": "Move existing alpha version of project from Heroku and Vercel to AWS, migrate existing data. Create modular structure for project, refactor existing functional. Add unit tests to project, write technical documentation with Mkdocs-material. Creating all the necessities so that the project can be developed and easily maintained. Performed DevOps tasks on deploying infrastructure and domains to AWS, set up AWS CDK (IaaC) to automatically deploy infrastructure. Move domains from GoDaddy to AWS Route 53. Set up Front-end deployments with AWS Amplify.",
+        "description": "A platform, that allows professional screenwriters to write, edit, and collaborate on screenplays. MuseML is based on generative machine-learning software with understanding of the creator's actual ideation by powering with smart recommendations writing by auto-suggesting plot ideas.",
+        "responsibilities": "Move existing alpha version of project from Heroku and Vercel to AWS, migrate existing data. Creating all the necessities so that the project can be developed and easily maintained. Performed DevOps tasks on deploying infrastructure and domains to AWS, set up AWS CDK (IaaC) to automatically deploy infrastructure. Move domains from GoDaddy to AWS Route 53. Set up Front-end deployments with AWS Amplify.",
         "usedTechnologies": [
           "AWS",
           "AWS CDK",
@@ -73,16 +88,27 @@
           "SQL",
           "Alembic",
           "pytest-asyncio",
-          "MkDocs-Material"
-        ]
+          "MkDocs-Material",
+          "diagrams.net (draw.io)"
+        ],
+        "teamSize": "10-20",
+        "positionInTeam": "Lead Software Engineer",
+        "customer": "\uD83C\uDDFA\uD83C\uDDF8 (USA)",
+        "domain": "Machine Learning, Generation",
+        "achieved": ["move domains to Route 53", "migrate database from Heroku to RDS", "modular structure", "technical documentation with mkdocs", "wrote unittests", "deploy with AWS CDK", "configure logging system from scratch"]
       },
       {
         "date": "January 2022",
         "title": "Best Driver",
         "icon": "fa-solid fa-lg fa-map-location-dot",
         "description": "Product for a delivery company in Sweden. Back-end for mobile application.",
-        "responsibilities": "Technical consultation and support. Provide architectural ideas and solutions, AWS and container based with AWS ECS (Fargate), code review for critical features.",
-        "usedTechnologies": ["Python 3.9", "AWS", "ElastiCache", "ECR", "ECS", "RDS", "asyncio"]
+        "responsibilities": "Technical consultation and support. Provide architectural ideas and solutions, AWS and containers based with AWS ECS (Fargate), code review for critical features.",
+        "usedTechnologies": ["Python 3.9", "AWS", "ElastiCache", "ECR", "ECS", "RDS", "asyncio"],
+        "teamSize": "10-20",
+        "positionInTeam": "Technical Consultant",
+        "customer": "\uD83C\uDDF8\uD83C\uDDEA (Sweden)",
+        "domain": "Delivery, Navigation",
+        "achieved": ["mentorship"]
       }
     ]
   },
@@ -92,11 +118,11 @@
     "toDate": "January 2022",
     "projects": [
       {
-        "date": "October, 2021",
+        "date": "October 2021",
         "title": "AMP Energy",
         "icon": "fa-solid fa-lg fa-plug-circle-check",
         "description": "A platform for analyzing data from IoT devices for charts and events monitoring.",
-        "responsibilities": "Build serverless architecture with AWS, design database schema, planning, estimation and development, make requirements for the project. Implementation of the tariff calculation system. Made ETL process using IoT Rule, Kinesis, S3, Lambda and Pandas. Was a lead developer for an international team. Distributed and manage tasks to developers and data engineers from other countries (India, Pakistan, UAE).",
+        "responsibilities": "Built serverless architecture with AWS, design database schema, planning, estimation and development, made requirements for the project. Made ETL process using IoT Rule, Kinesis, S3, Lambda and Pandas. Was a lead developer for an international team. Distribute and manage tasks to developers and data engineers from other countries (India, Pakistan, UAE).",
         "usedTechnologies": [
           "Python 3.9",
           "AWS",
@@ -115,27 +141,43 @@
           "Alembic",
           "Pydantic",
           "SQL",
-          "Pandas"
-        ]
+          "Pandas",
+          "diagrams.net (draw.io)"
+        ],
+        "teamSize": "10-20",
+        "positionInTeam": "Lead Software Engineer",
+        "customer": "\uD83C\uDDE6\uD83C\uDDEA (United Arab Emirates)",
+        "domain": "IoT, Serverless, High-load, ETL",
+        "achieved": ["AWS experience", "built ETL process", "manage international team", "tariff calculation system"]
       },
       {
-        "date": "April, 2021",
+        "date": "April 2021",
         "title": "Flow Hospitality (MAPAL group)",
         "icon": "fa-solid fa-lg fa-utensils",
         "description": "A platform that provides services to companies to assist in employee training and employee career development.",
-        "responsibilities": "Creation of application functionality for a career map of a company with several career paths and career opportunities (jobs). Modeling database schema for a given application, creating an API for working with the application. Worked with a distributed team (customer and staff from Edinburgh).",
-        "usedTechnologies": ["Python 2.7", "Django 1.11", "MySQL", "DRF"]
+        "responsibilities": "Creation of application functionality for a career map of a company with several career paths and career opportunities (jobs). Modeling database schema for a given application, creating an API for working with the application.",
+        "usedTechnologies": ["Python 2.7", "Django 1.11", "MySQL", "DRF"],
+        "teamSize": "10-20",
+        "positionInTeam": "Python Software Engineer",
+        "customer": "\uD83C\uDDEC\uD83C\uDDE7 (United Kingdom)",
+        "domain": "Career development",
+        "achieved": ["worked with a distributed team from Edinburgh"]
       },
       {
-        "date": "February, 2021",
+        "date": "February 2021",
         "title": "Time tracking (Internal project)",
         "icon": "fa-solid fa-lg fa-business-time",
         "description": "Reporting service for work progress tracking, projects and staff system.",
-        "responsibilities": "Created of a service where company employees can fill out progress reports. implementation of reports and complex requests for counting hours worked, uploading report data in xlsx. Test coverage of the project and the final coverage in 98%.",
-        "usedTechnologies": ["Python 3.7", "Django REST framework", "PostgreSQL", "Redis"]
+        "responsibilities": "Created of a service where company employees can fill out progress reports. implementation of reports and complex requests for counting hours worked, uploading report data in xlsx.",
+        "usedTechnologies": ["Python 3.7", "Python 3.9", "Django REST framework", "PostgreSQL", "Redis", "Poetry"],
+        "teamSize": "10-20",
+        "positionInTeam": "Python Software Engineer",
+        "customer": "\uD83C\uDDFA\uD83C\uDDE6 (Ukraine)",
+        "domain": "Management, Accountant",
+        "achieved": ["test coverage 98%.", "upgrade Python version to 3.9", "write documentation"]
       },
       {
-        "date": "January, 2021",
+        "date": "January 2021",
         "title": "Plegium (plegium.se)",
         "icon": "fa-solid fa-lg fa-cart-shopping",
         "description": "The project is related to the production and sale of smart pepper sprays for self-defense.",
@@ -148,14 +190,19 @@
           "Redis",
           "Nets API",
           "pydantic"
-        ]
+        ],
+        "teamSize": "10-20",
+        "positionInTeam": "Python Software Engineer",
+        "customer": "\uD83C\uDDF8\uD83C\uDDEA (Sweden)",
+        "domain": "IoT, Self-defence, Insurance, Marketing",
+        "achieved": ["Create payment app", "built insurance subscription", "integration with Nets API (payments provider)"]
       },
       {
-        "date": "April, 2020",
+        "date": "April 2020",
         "title": "CSI Tax Portal (NAV Solutions)",
         "icon": "fa-solid fa-lg fa-file-invoice-dollar",
         "description": "Tax rating portal which integrates with accounting services.",
-        "responsibilities": "Made architecture solutions of the Back-end side of the service. Working with asynchronous programming. Integration with tax rating services. Wrote over 400 tests to cover complex business logic related to finances and invoices.",
+        "responsibilities": "Made architecture solutions of the Back-end side of the service. Worked with asynchronous programming.",
         "usedTechnologies": [
           "Python 3.8",
           "asyncio",
@@ -169,10 +216,15 @@
           "factory_boy",
           "unittest + mock",
           "Faker"
-        ]
+        ],
+        "teamSize": "5-10",
+        "positionInTeam": "Python Software Engineer",
+        "customer": "\uD83C\uDDFA\uD83C\uDDF8 (USA)",
+        "domain": "Finance, Accountant",
+        "achieved": ["wrote 400+ tests to cover complex business logic", "integration with tax rating services"]
       },
       {
-        "date": "March, 2020",
+        "date": "March 2020",
         "title": "City Dashboard",
         "icon": "fa-solid fa-lg fa-city",
         "description": "Collecting and formatting data from urban and municipal services.",
@@ -187,25 +239,35 @@
           "factory_boy",
           "unittest + mock",
           "Faker"
-        ]
+        ],
+        "teamSize": "5-10",
+        "positionInTeam": "Python Software Engineer",
+        "customer": "\uD83C\uDDFA\uD83C\uDDE6 (Ukraine)",
+        "domain": "Government, Municipal",
+        "achieved": ["built ETL process", "integration with municipal services", "excel reports generation"]
       },
       {
-        "date": "March, 2020",
+        "date": "March 2020",
         "title": "HelpMed",
         "icon": "fa-solid fa-lg fa-truck-medical",
         "description": "This is a web application created to help doctors and other healthcare professionals to get to work during the difficult time of quarantine.",
         "responsibilities": "From project initialization to release completed in a week. A database entities were modeled, Implemented a REST API for a mobile applications.",
-        "usedTechnologies": ["Python 3.8", "Django 3.0", "Django REST framework", "PostgreSQL"]
+        "usedTechnologies": ["Python 3.8", "Django 3.0", "Django REST framework", "PostgreSQL"],
+        "teamSize": "5-10",
+        "positionInTeam": "Python Software Engineer",
+        "customer": "\uD83C\uDDFA\uD83C\uDDE6 (Ukraine)",
+        "domain": "Medical, Volunteer",
+        "achieved": ["built project less than 7 days"]
       }
     ]
   },
   {
     "heading": "Boosteroid LLC - Python Software Engineer",
-    "fromDate": "May, 2019",
-    "toDate": "February, 2020",
+    "fromDate": "May 2019",
+    "toDate": "February 2020",
     "projects": [
       {
-        "date": "May, 2019",
+        "date": "May 2019",
         "title": "Boosteroid",
         "icon": "fa-solid fa-lg fa-gamepad",
         "description": "Cloud Gaming Service (PaaS).",
@@ -222,17 +284,22 @@
           "factory_boy",
           "unittest + mock",
           "Faker"
-        ]
+        ],
+        "teamSize": "10-15",
+        "positionInTeam": "Python Software Engineer",
+        "customer": "\uD83C\uDDFA\uD83C\uDDE6 (Ukraine), \uD83C\uDDF7\uD83C\uDDF4 (Romania)",
+        "domain": "PaaS, Gaming, Product",
+        "achieved": ["worked for product company", "integrate with PayPal subscriptions", "integrate with Twispay payments"]
       }
     ]
   },
   {
     "heading": "DDI Development - Full-Stack Developer",
-    "fromDate": "October, 2018",
-    "toDate": "December, 2018",
+    "fromDate": "October 2018",
+    "toDate": "December 2018",
     "projects": [
       {
-        "date": "October, 2018",
+        "date": "October 2018",
         "title": "Maisie",
         "icon": "fa-solid fa-lg fa-cart-shopping",
         "description": "Marketing platform with widgets and bots for e-commerce solutions.",
@@ -245,33 +312,48 @@
           "Django templates",
           "JavaScript",
           "CSS"
-        ]
+        ],
+        "teamSize": "5-10",
+        "positionInTeam": "Junior Full-Stack Developer",
+        "customer": "\uD83C\uDDE6\uD83C\uDDFA (Australia)",
+        "domain": "Marketing, Shopping",
+        "achieved": ["integration with Facebook Messenger API"]
       }
     ]
   },
   {
     "heading": "CHI Software - Junior Python Developer",
-    "fromDate": "March, 2018",
-    "toDate": "October, 2018",
+    "fromDate": "March 2018",
+    "toDate": "October 2018",
     "projects": [
       {
-        "date": "August, 2018",
+        "date": "August 2018",
         "title": "Under NDA",
         "icon": "fa-solid fa-lg fa-car-side",
         "description": "The system of services for vehicle dealers (analyzing data/serving data).",
         "responsibilities": "Created of complex SQL queries for generating reports, helped with ETL process, created of REST API for mobile add-ons, database modeling. Wrote tests using unittest module.",
-        "usedTechnologies": ["Python 3.7", "SQL", "PostgeSQL", "Docker", "unittest"]
+        "usedTechnologies": ["Python 3.7", "SQL", "PostgeSQL", "Docker", "unittest"],
+        "teamSize": "2-5",
+        "positionInTeam": "Junior Python Developer",
+        "customer": "\uD83C\uDDEE\uD83C\uDDF1 (Israel), \uD83C\uDDFA\uD83C\uDDF8 (USA)",
+        "domain": "Marketing, Auto dealers",
+        "achieved": ["worked with raw SQL queries", "worked with ETL process"]
       },
       {
-        "date": "July, 2018",
+        "date": "July 2018",
         "title": "Zakaz.ua",
         "icon": "fa-solid fa-lg fa-cart-shopping",
         "description": "The wide system of food delivery based on several sites and services.",
         "responsibilities": "Refactoring of Python 2.7 code for an upgrade to Python 3, fix Back-end side issues from Sentry.",
-        "usedTechnologies": ["Python 2.7", "Python 3", "Django 1.3", "Django 2.0", "Sentry"]
+        "usedTechnologies": ["Python 2.7", "Python 3", "Django 1.3", "Django 2.0", "Sentry"],
+        "teamSize": "15-20",
+        "positionInTeam": "Junior Python Developer",
+        "customer": "\uD83C\uDDFA\uD83C\uDDE6 (Ukraine)",
+        "domain": "Marketing, Shopping",
+        "achieved": ["working with Sentry", "Python debugging"]
       },
       {
-        "date": "March, 2018",
+        "date": "March 2018",
         "title": "Outbizzed",
         "icon": "fa-solid fa-lg fa-calendar-days",
         "description": "Back-end for iOS and Android apps for group meetings planning connected with Google Calendar API.",
@@ -286,17 +368,22 @@
           "Flask",
           "MongoDB",
           "PostgreSQL"
-        ]
+        ],
+        "teamSize": "5-10",
+        "positionInTeam": "Junior Python Developer",
+        "customer": "\uD83C\uDDFA\uD83C\uDDF8 (USA)",
+        "domain": "Management, Planning, Office Tool",
+        "achieved": ["working with Flask", "working with MongoDB"]
       }
     ]
   },
   {
     "heading": "Next Chain - Junior Full-Stack Developer",
-    "fromDate": "November, 2017",
-    "toDate": "March, 2018",
+    "fromDate": "November 2017",
+    "toDate": "March 2018",
     "projects": [
       {
-        "date": "November, 2017",
+        "date": "November 2017",
         "title": "ICO site for e-Chat",
         "icon": "fab fa-lg fa-bitcoin",
         "description": "Developing a website, created to invite investors for the further development of the application.",
@@ -311,22 +398,32 @@
           "JavaScript",
           "Bootstrap 4",
           "Sentry"
-        ]
+        ],
+        "teamSize": "15-20",
+        "positionInTeam": "Junior Python Developer",
+        "customer": "\uD83C\uDDFA\uD83C\uDDE6 (Ukraine), \uD83C\uDDFA\uD83C\uDDF8 (USA)",
+        "domain": "Blockchain, Marketing",
+        "achieved": ["first experience with Django", "make multilanguage site", "optimize fill out translations"]
       }
     ]
   },
   {
     "heading": "Torgus GmbH - Database administrator and content manager (JTL-Wawi)",
-    "fromDate": "July, 2016",
-    "toDate": "March, 2017",
+    "fromDate": "July 2016",
+    "toDate": "March 2017",
     "projects": [
       {
-        "date": "July, 2016",
+        "date": "July 2016",
         "title": "Torgus GmbH",
         "icon": "fas fa-lg fa-database",
         "description": "Production of wall paintings, sales through Amazon service.",
-        "responsibilities": "Filling the database with products, filling in prices. Used Python to automate routine tasks (working .csv files, autogenerate folders structures, create clickers). Created GUIs applications to automate working processes.",
-        "usedTechnologies": ["Python 3", "csv", "PyInstaller", "tkinter"]
+        "responsibilities": "Filling the database with products, filling in prices. Used Python to automate routine tasks (working .csv files, autogenerate folders structures, create clickers).",
+        "usedTechnologies": ["Python 3", "csv", "PyInstaller", "tkinter"],
+        "teamSize": "15-20",
+        "positionInTeam": "Database administrator, Content Manager",
+        "customer": "\uD83C\uDDE9\uD83C\uDDEA (Germany)",
+        "domain": "Marketing, Shopping, Gallery",
+        "achieved": ["experience with Python", "working with .csv generation", "built GUI app to automate working process"]
       }
     ]
   }

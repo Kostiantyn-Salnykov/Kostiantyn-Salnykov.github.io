@@ -170,7 +170,7 @@
               <div class="modal-background" @click="readMoreAboutModal = false"></div>
               <div class="modal-card has-background round">
                 <header class="modal-card-head has-background">
-                  <p class="modal-card-title">About me</p>
+                  <p class="modal-card-title has-background">About me</p>
                   <button class="delete" aria-label="close" @click="readMoreAboutModal = false"></button>
                 </header>
                 <section class="modal-card-body has-text-black has-background">
@@ -245,17 +245,56 @@
                       <span class="icon is-medium">
                         <i :class="project.icon"></i>
                       </span>
-                      <span class="subtitle is-size-4 is-size-6-mobile">{{ project.title }}</span>
+                      <span class="subtitle is-size-4 is-size-6-mobile">{{ project.title }} [{{project.date}}]</span>
                     </span>
-                    <div class="is-size-6 mb-2">{{ project.date }}</div>
-                    <div class="is-size-6 mb-2"><u>Description</u>: {{ project.description }}</div>
-                    <div class="is-size-6 mb-2"><u>Responsibilities</u>: {{ project.responsibilities }}</div>
-                    <div>
-                      <u>Used technologies</u>:
-                      <template v-for="tech in project.usedTechnologies" :key="tech">
-                        <span class="tag is-info is-rounded is-outlined mr-1">{{ tech }}</span>
-                      </template>
+                    <br/>
+                    <button
+                      class="button is-outlined is-small"
+                      @click="openModalById(project.title)"
+                      :class="[userTheme === 'dark-theme' ? 'is-primary' : 'is-danger', 'is-primary']"
+                    >
+                      Details
+                    </button>
+                    <div class="modal" :id="project.title">
+                      <div class="modal-background" @click="closeModalById(project.title)"></div>
+                      <div class="modal-card has-background round">
+                        <header class="modal-card-head has-background">
+                          <p class="modal-card-title has-background">Project details</p>
+                          <button class="delete" aria-label="close" @click="closeModalById(project.title)"></button>
+                        </header>
+                        <section class="modal-card-body has-text-black has-background">
+                          <div class="block is-size-4"><span class="has-text-link">Title</span>: {{ project.title }}</div>
+                          <div class="block is-size-4"><span class="has-text-link">Description</span>: {{ project.description }}</div>
+                          <div class="block is-size-4"><span class="has-text-link">Country</span>: {{ project.customer }}</div>
+                          <div class="block is-size-4"><span class="has-text-link">Domain</span>:&nbsp;
+                            <span class="icon-text">
+                              <span class="icon has-text-link"><i :class="project.icon"></i></span>
+                              <span>{{ project.domain }}</span>
+                            </span>
+                          </div>
+                          <div class="block is-size-4"><span class="has-text-link">Team size</span>: {{ project.teamSize }}</div>
+                          <div class="block is-size-4"><span class="has-text-link">Position in team</span>: {{ project.positionInTeam }}</div>
+                          <div class="block is-size-4">
+                            <span class="has-text-link">Used technologies</span>:
+                            <span class="tag is-info is-rounded is-outlined mr-1 is-medium" v-for="tech in project.usedTechnologies" :key="tech">{{tech}}</span>
+                          </div>
+                          <div class="block is-size-4" v-show="project.responsibilities"><span class="has-text-link">Responsibilities</span>: {{ project.responsibilities }}</div>
+                          <div class="block is-size-4" v-show="project.achieved">
+                            <span class="has-text-link">Achieved</span>:
+                            <span class="tag is-info is-rounded is-outlined mr-1 is-medium" v-for="achieve in project.achieved" :key="achieve">{{achieve}}</span>
+                          </div>
+                        </section>
+                      </div>
                     </div>
+                    <!--                    <div class="is-size-6 mb-2">{{ project.date }}</div>-->
+<!--                    <div class="is-size-6 mb-2"><u>Description</u>: {{ project.description }}</div>-->
+<!--                    <div class="is-size-6 mb-2"><u>Responsibilities</u>: {{ project.responsibilities }}</div>-->
+<!--                    <div>-->
+<!--                      <u>Used technologies</u>:-->
+<!--                      <template v-for="tech in project.usedTechnologies" :key="tech">-->
+<!--                        <span class="tag is-info is-rounded is-outlined mr-1">{{ tech }}</span>-->
+<!--                      </template>-->
+<!--                    </div>-->
                   </div>
                 </div>
               </template>
@@ -483,6 +522,16 @@ import technologiesJSON from "./assets/data/technologies.json";
 import experienceJSON from "./assets/data/experience.json";
 import educationJSON from "./assets/data/education.json";
 import coursesJSON from "./assets/data/courses.json";
+
+function closeModalById(id) {
+  const element = document.getElementById(id);
+  element.classList.remove("is-active");
+}
+
+function openModalById(id) {
+  const element = document.getElementById(id);
+  element.classList.add("is-active");
+}
 
 function copy(text) {
   navigator.clipboard.writeText(text).then(
