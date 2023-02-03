@@ -245,9 +245,9 @@
                       <span class="icon is-medium">
                         <i :class="project.icon"></i>
                       </span>
-                      <span class="subtitle is-size-4 is-size-6-mobile">{{ project.title }} [{{project.date}}]</span>
+                      <span class="subtitle is-size-4 is-size-6-mobile">{{ project.title }} [{{ project.date }}]</span>
                     </span>
-                    <br/>
+                    <br />
                     <button
                       class="button is-outlined is-small"
                       @click="openModalById(project.title)"
@@ -263,38 +263,61 @@
                           <button class="delete" aria-label="close" @click="closeModalById(project.title)"></button>
                         </header>
                         <section class="modal-card-body has-text-black has-background">
-                          <div class="block is-size-4"><span class="has-text-link">Title</span>: {{ project.title }}</div>
-                          <div class="block is-size-4"><span class="has-text-link">Description</span>: {{ project.description }}</div>
-                          <div class="block is-size-4"><span class="has-text-link">Country</span>: {{ project.customer }}</div>
-                          <div class="block is-size-4"><span class="has-text-link">Domain</span>:&nbsp;
+                          <div class="block is-size-4">
+                            <span class="has-text-link">Title</span>: {{ project.title }}
+                          </div>
+                          <div class="block is-size-4">
+                            <span class="has-text-link">Description</span>: {{ project.description }}
+                          </div>
+                          <div class="block is-size-4">
+                            <span class="has-text-link">Country</span>: {{ project.customer }}
+                          </div>
+                          <div class="block is-size-4">
+                            <span class="has-text-link">Domain</span>:&nbsp;
                             <span class="icon-text">
                               <span class="icon has-text-link"><i :class="project.icon"></i></span>
                               <span>{{ project.domain }}</span>
                             </span>
                           </div>
-                          <div class="block is-size-4"><span class="has-text-link">Team size</span>: {{ project.teamSize }}</div>
-                          <div class="block is-size-4"><span class="has-text-link">Position in team</span>: {{ project.positionInTeam }}</div>
+                          <div class="block is-size-4">
+                            <span class="has-text-link">Team size</span>: {{ project.teamSize }}
+                          </div>
+                          <div class="block is-size-4">
+                            <span class="has-text-link">Position in team</span>: {{ project.positionInTeam }}
+                          </div>
                           <div class="block is-size-4">
                             <span class="has-text-link">Used technologies</span>:
-                            <span class="tag is-info is-rounded is-outlined mr-1 is-medium" v-for="tech in project.usedTechnologies" :key="tech">{{tech}}</span>
+                            <span
+                              class="tag is-info is-rounded is-outlined mr-1 is-medium"
+                              v-for="tech in project.usedTechnologies"
+                              :key="tech"
+                              >{{ tech }}</span
+                            >
                           </div>
-                          <div class="block is-size-4" v-show="project.responsibilities"><span class="has-text-link">Responsibilities</span>: {{ project.responsibilities }}</div>
+                          <div class="block is-size-4" v-show="project.responsibilities">
+                            <span class="has-text-link">Responsibilities</span>: {{ project.responsibilities }}
+                          </div>
                           <div class="block is-size-4" v-show="project.achieved">
                             <span class="has-text-link">Achieved</span>:
-                            <span class="tag is-info is-rounded is-outlined mr-1 is-medium" v-for="achieve in project.achieved" :key="achieve">{{achieve}}</span>
+                            <span
+                              class="tag is-info is-rounded is-outlined mr-1 is-medium"
+                              v-for="achieve in project.achieved"
+                              :key="achieve"
+                              >{{ achieve }}</span
+                            >
                           </div>
                         </section>
                       </div>
                     </div>
                     <!--                    <div class="is-size-6 mb-2">{{ project.date }}</div>-->
-<!--                    <div class="is-size-6 mb-2"><u>Description</u>: {{ project.description }}</div>-->
-<!--                    <div class="is-size-6 mb-2"><u>Responsibilities</u>: {{ project.responsibilities }}</div>-->
-<!--                    <div>-->
-<!--                      <u>Used technologies</u>:-->
-<!--                      <template v-for="tech in project.usedTechnologies" :key="tech">-->
-<!--                        <span class="tag is-info is-rounded is-outlined mr-1">{{ tech }}</span>-->
-<!--                      </template>-->
-<!--                    </div>-->
+                    <!--                    <div class="is-size-6 mb-2"><u>Description</u>: {{ project.description }}</div>-->
+                    <!--                    <div class="is-size-6 mb-2"><u>Responsibilities</u>: {{ project.responsibilities }}</div>-->
+                    <!--                    <div>-->
+                    <!--                      <u>Used technologies</u>:-->
+                    <!--                      <template v-for="tech in project.usedTechnologies" :key="tech">-->
+                    <!--                        <span class="tag is-info is-rounded is-outlined mr-1">{{ tech }}</span>-->
+                    <!--                      </template>-->
+                    <!--                    </div>-->
                   </div>
                 </div>
               </template>

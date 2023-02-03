@@ -50,7 +50,12 @@
         "positionInTeam": "Lead Software Engineer",
         "customer": "\uD83C\uDDFA\uD83C\uDDE6 (Ukraine), \uD83C\uDDF8\uD83C\uDDEA (Sweden)",
         "domain": "Finance",
-        "achieved": ["publish PyPi library", "open source", "testing with tox (for multiple Python's versions)", "CI with GitHub Workflows (Actions)"]
+        "achieved": [
+          "publish PyPi library",
+          "open source",
+          "testing with tox (for multiple Python's versions)",
+          "CI with GitHub Workflows (Actions)"
+        ]
       }
     ]
   },
@@ -95,7 +100,15 @@
         "positionInTeam": "Lead Software Engineer",
         "customer": "\uD83C\uDDFA\uD83C\uDDF8 (USA)",
         "domain": "Machine Learning, Generation",
-        "achieved": ["move domains to Route 53", "migrate database from Heroku to RDS", "modular structure", "technical documentation with mkdocs", "wrote unittests", "deploy with AWS CDK", "configure logging system from scratch"]
+        "achieved": [
+          "move domains to Route 53",
+          "migrate database from Heroku to RDS",
+          "modular structure",
+          "technical documentation with mkdocs",
+          "wrote unittests",
+          "deploy with AWS CDK",
+          "configure logging system from scratch"
+        ]
       },
       {
         "date": "January 2022",
@@ -195,7 +208,11 @@
         "positionInTeam": "Python Software Engineer",
         "customer": "\uD83C\uDDF8\uD83C\uDDEA (Sweden)",
         "domain": "IoT, Self-defence, Insurance, Marketing",
-        "achieved": ["Create payment app", "built insurance subscription", "integration with Nets API (payments provider)"]
+        "achieved": [
+          "Create payment app",
+          "built insurance subscription",
+          "integration with Nets API (payments provider)"
+        ]
       },
       {
         "date": "April 2020",
@@ -289,7 +306,11 @@
         "positionInTeam": "Python Software Engineer",
         "customer": "\uD83C\uDDFA\uD83C\uDDE6 (Ukraine), \uD83C\uDDF7\uD83C\uDDF4 (Romania)",
         "domain": "PaaS, Gaming, Product",
-        "achieved": ["worked for product company", "integrate with PayPal subscriptions", "integrate with Twispay payments"]
+        "achieved": [
+          "worked for product company",
+          "integrate with PayPal subscriptions",
+          "integrate with Twispay payments"
+        ]
       }
     ]
   },
@@ -423,7 +444,11 @@
         "positionInTeam": "Database administrator, Content Manager",
         "customer": "\uD83C\uDDE9\uD83C\uDDEA (Germany)",
         "domain": "Marketing, Shopping, Gallery",
-        "achieved": ["experience with Python", "working with .csv generation", "built GUI app to automate working process"]
+        "achieved": [
+          "experience with Python",
+          "working with .csv generation",
+          "built GUI app to automate working process"
+        ]
       }
     ]
   }
