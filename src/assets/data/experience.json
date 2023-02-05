@@ -166,7 +166,7 @@
       {
         "date": "April 2021",
         "title": "Flow Hospitality (MAPAL group)",
-        "icon": "fa-solid fa-lg fa-utensils",
+        "icon": "fa-solid fa-lg fa-chalkboard-user",
         "description": "A platform that provides services to companies to assist in employee training and employee career development.",
         "responsibilities": "Creation of application functionality for a career map of a company with several career paths and career opportunities (jobs). Modeling database schema for a given application, creating an API for working with the application.",
         "usedTechnologies": ["Python 2.7", "Django 1.11", "MySQL", "DRF"],
