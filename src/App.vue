@@ -5,7 +5,6 @@
       <div class="buttons mb-0">
         <button
           class="button is-responsive is-outlined"
-          v-show="false"
           @click="showPrintModal = true"
           :class="[userTheme === 'dark-theme' ? 'is-primary' : 'is-danger', 'is-primary']"
         >
@@ -170,7 +169,7 @@
               <div class="modal-background" @click="readMoreAboutModal = false"></div>
               <div class="modal-card has-background round">
                 <header class="modal-card-head has-background">
-                  <p class="modal-card-title has-background">About me</p>
+                  <p class="modal-card-title has-dynamic-text">About me</p>
                   <button class="delete" aria-label="close" @click="readMoreAboutModal = false"></button>
                 </header>
                 <section class="modal-card-body has-text-black has-background">
@@ -259,7 +258,7 @@
                       <div class="modal-background" @click="closeModalById(project.title)"></div>
                       <div class="modal-card has-background round">
                         <header class="modal-card-head has-background">
-                          <p class="modal-card-title has-background">Project details</p>
+                          <p class="modal-card-title has-dynamic-text">Project details</p>
                           <button class="delete" aria-label="close" @click="closeModalById(project.title)"></button>
                         </header>
                         <section class="modal-card-body has-text-black has-background">
@@ -392,11 +391,11 @@
     <!--  End Main version-->
   </div>
   <!--  Print version-->
-  <section class="section has-background-white has-text-black is-print-only">
+  <section class="section has-background-white has-text-black is-print-only mt-0 pt-0 pb-1">
     <h1 class="title has-text-centered is-size-4">{{ fullName }}</h1>
     <h2 class="subtitle has-text-centered is-size-5">{{ positionName }} {{ positionLangs }}</h2>
-    <div class="columns">
-      <div class="column">
+    <div class="columns is-multiline">
+      <div class="column is-half">
         <h1 class="title is-size-6 mb-1">Contacts:</h1>
         <template v-for="contact in contacts" :key="contact.name">
           <p class="is-size-6">
@@ -404,6 +403,8 @@
             >: {{ contact.value }}
           </p>
         </template>
+      </div>
+      <div class="column is-half">
         <h1 class="title is-size-6 mb-1">Work Type:</h1>
         <template v-for="detail in details" :key="detail.name">
           <p class="is-size-6">
@@ -419,24 +420,10 @@
           </p>
         </template>
       </div>
-      <div class="column is-one-third">
-        <figure class="image is-responsive" v-if="printOptions['QR or Photo?'].value === 'Photo'">
-          <img :src="photoUrl" alt="Photo" width="200" />
-        </figure>
-        <QrcodeVue
-          v-else-if="printOptions['QR or Photo?'].value === 'QR'"
-          :value="cvURL"
-          :size="200"
-          render-as="svg"
-          background="white"
-          foreground="black"
-          class="has-text-centered is-align-self-center"
-        />
-      </div>
     </div>
   </section>
   <section
-    class="section has-background-white has-text-black is-print-only mt-0 pt-0"
+    class="section has-background-white has-text-black is-print-only mt-0 pt-0 pb-1"
     v-show="printOptions['About Me'].value"
   >
     <div class="content">
@@ -447,9 +434,8 @@
     </div>
   </section>
   <section
-    class="section has-background-white has-text-black is-print-only my-0 py-0"
+    class="section has-background-white has-text-black is-print-only my-0 pt-0 pb-1"
     v-show="printOptions.Technologies.value"
-    :class="{'has-page-break-before': printOptions['About Me'].value}"
   >
     <div class="content">
       <h1 class="title has-text-centered is-size-4 mb-3">Technologies</h1>
@@ -473,31 +459,35 @@
     </div>
   </section>
   <section
-    class="section has-background-white has-text-black is-print-only my-0 pt-2"
+    class="section has-background-white has-text-black is-print-only my-0 pt-0 pb-1"
     v-show="printOptions.Experience.value"
   >
     <div class="content is-small">
-      <h4 class="title has-text-centered is-size-4 mb-3">Experience</h4>
+      <h4 class="title has-text-centered is-size-4 mb-0">Experience</h4>
       <template v-for="job in experience" :key="job.heading">
-        <h5 class="title is-size-5 mt-4">{{ job.heading }}</h5>
-        <h6 class="subtitle is-size-7 mb-1">{{ job.fromDate }} - {{ job.toDate }}</h6>
+        <h5 class="title is-size-5 mt-4 mb-1">
+          {{ job.heading }} <span class="is-size-7">[{{ job.fromDate }} - {{ job.toDate }}]</span>
+        </h5>
+        <!--        <h6 class="subtitle is-size-7 mb-1">{{ job.fromDate }} - {{ job.toDate }}</h6>-->
         <template v-for="project in job.projects" :key="project.title">
-          <h6 class="subtitle is-size-6 mb-0"><u>Project</u>: {{ project.title }}</h6>
-          <h6 class="subtitle is-size-7 m-0"><u>Date</u>: {{ project.date }}</h6>
+          <h6 class="is-size-6 mb-0">
+            <u>Project</u>: {{ project.title }} <span class="is-size-7">[{{ project.date }}]</span>
+          </h6>
+          <!--          <h6 class="subtitle is-size-7 m-0"><u>Date</u>: {{ project.date }}</h6>-->
           <p class="mb-1"><u>Description</u>: {{ project.description }}</p>
-          <p class="mb-1"><u>Responsibilities</u>: {{ project.responsibilities }}</p>
-          <p class="mb-1">
-            <u>Used Technologies</u>:
-            <template v-for="(tech, i) in project.usedTechnologies" :key="tech">
-              {{ tech }}<span v-if="i !== project.usedTechnologies.length - 1">, </span>
-              <span v-else>.</span>
-            </template>
-          </p>
+          <!--          <p class="mb-1"><u>Responsibilities</u>: {{ project.responsibilities }}</p>-->
+          <!--          <p class="mb-1">-->
+          <!--            <u>Used Technologies</u>:-->
+          <!--            <template v-for="(tech, i) in project.usedTechnologies" :key="tech">-->
+          <!--              {{ tech }}<span v-if="i !== project.usedTechnologies.length - 1">, </span>-->
+          <!--              <span v-else>.</span>-->
+          <!--            </template>-->
+          <!--          </p>-->
         </template>
       </template>
     </div>
   </section>
-  <section class="section has-background-white has-text-black is-print-only mt-0 pt-2">
+  <section class="section has-background-white has-text-black is-print-only mt-0 py-0">
     <div class="content" v-show="printOptions.Education.value">
       <h1 class="title has-text-centered is-size-4 mb-3">Education</h1>
       <div class="columns is-multiline">
@@ -535,7 +525,6 @@
 <script setup>
 import {ref, nextTick, onBeforeMount, onMounted} from "vue";
 import QrcodeVue from "qrcode.vue";
-import photoUrl from "./assets/photo.jpg";
 import contactsJSON from "./assets/data/contacts.json";
 import aboutMeJSON from "./assets/data/aboutMe.json";
 import aboutMeDetailedJSON from "./assets/data/aboutMeDetailed.json";
@@ -645,14 +634,6 @@ const showPrintModal = ref(false);
 const showPrintOptionsModal = ref(false);
 const readMoreAboutModal = ref(false);
 const printOptions = ref({
-  "QR or Photo?": {
-    value: "QR",
-    type: "radio",
-    options: [
-      {name: "QR", value: "QR"},
-      {name: "Photo", value: "Photo"},
-    ],
-  },
   Contacts: {value: true, type: "checkbox", is_disabled: true},
   "About Me": {value: false, type: "checkbox"},
   Technologies: {value: true, type: "checkbox"},

@@ -21,6 +21,10 @@ $primary: #e5ba73;
   color: $dark;
 }
 
+.has-dynamic-text {
+  color: $dark !important;
+}
+
 .has-background {
   background: var(--background-light) !important;
   color: $dark !important;
@@ -54,6 +58,9 @@ $primary: #e5ba73;
   color: $light;
   body {
     color: $light;
+  }
+  .has-dynamic-text {
+    color: $light !important;
   }
   .has-background {
     background: var(--background-dark) !important;

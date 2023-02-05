@@ -429,7 +429,7 @@
     ]
   },
   {
-    "heading": "Torgus GmbH - Database administrator and content manager (JTL-Wawi)",
+    "heading": "Torgus GmbH - Database administrator, Content Manager",
     "fromDate": "July 2016",
     "toDate": "March 2017",
     "projects": [
@@ -439,7 +439,7 @@
         "icon": "fas fa-lg fa-database",
         "description": "Production of wall paintings, sales through Amazon service.",
         "responsibilities": "Filling the database with products, filling in prices. Used Python to automate routine tasks (working .csv files, autogenerate folders structures, create clickers).",
-        "usedTechnologies": ["Python 3", "csv", "PyInstaller", "tkinter"],
+        "usedTechnologies": ["Python 3", "csv", "PyInstaller", "tkinter", "JTL-Wawi"],
         "teamSize": "15-20",
         "positionInTeam": "Database administrator, Content Manager",
         "customer": "\uD83C\uDDE9\uD83C\uDDEA (Germany)",
