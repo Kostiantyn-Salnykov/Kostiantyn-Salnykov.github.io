@@ -100,7 +100,7 @@
     </section>
     <section class="section pt-2 is-hidden-print">
       <div class="columns is-multiline">
-        <div class="column is-full-mobile is-one-quarter-tablet">
+        <div class="column is-full-mobile is-half-tablet is-one-quarter-desktop">
           <div class="content">
             <p class="title has-text-link mb-1">Contacts</p>
             <template v-for="contact in contacts" :key="contact.name">
@@ -152,7 +152,7 @@
             </template>
           </div>
         </div>
-        <div class="column is-full-mobile is-one-quarter-tablet">
+        <div class="column is-full-mobile is-half-tablet is-one-quarter-desktop">
           <div class="content">
             <p class="title has-text-link mb-1">About Me</p>
             <template v-for="paragraph in paragraphs" :key="paragraph">
@@ -185,19 +185,25 @@
             </div>
           </div>
         </div>
-        <div class="column is-full-mobile is-one-quarter-tablet">
+        <div class="column is-full-mobile is-half-tablet is-one-quarter-desktop">
           <div class="content">
             <p class="title has-text-link mb-1">Details</p>
             <template v-for="detail in details" :key="detail.name">
               <template v-if="detail.name == 'Timezone'">
-                <p class="py-0 my-0">{{ detail.name }}: {{ detail.value }}</p>
+                <p class="py-0 my-0">
+                  <span v-if="'emoji' in detail">{{ detail.emoji }}</span
+                  >{{ detail.name }}: {{ detail.value }}
+                </p>
                 <p>({{ tzDateTime }})</p>
               </template>
-              <p v-else>{{ detail.name }}: {{ detail.value }}</p>
+              <p v-else>
+                <span v-if="'emoji' in detail">{{ detail.emoji }}</span
+                >{{ detail.name }}: {{ detail.value }}
+              </p>
             </template>
           </div>
         </div>
-        <div class="column is-full-mobile is-one-quarter-tablet">
+        <div class="column is-full-mobile is-half-tablet is-one-quarter-desktop">
           <div class="content">
             <p class="title has-text-link mb-1">Languages</p>
             <template v-for="lang in languages" :key="lang.name">
@@ -246,7 +252,7 @@
                       </span>
                       <span class="subtitle is-size-4 is-size-6-mobile">{{ project.title }} [{{ project.date }}]</span>
                     </span>
-                    <br />
+                    <div class="is-size-6 mb-2"><u>Description</u>: {{ project.description }}</div>
                     <button
                       class="button is-outlined is-small"
                       @click="openModalById(project.title)"
@@ -308,7 +314,7 @@
                         </section>
                       </div>
                     </div>
-                    <!--                    <div class="is-size-6 mb-2">{{ project.date }}</div>-->
+                    <!--                                        <div class="is-size-6 mb-2">{{ project.date }}</div>-->
                     <!--                    <div class="is-size-6 mb-2"><u>Description</u>: {{ project.description }}</div>-->
                     <!--                    <div class="is-size-6 mb-2"><u>Responsibilities</u>: {{ project.responsibilities }}</div>-->
                     <!--                    <div>-->

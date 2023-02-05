@@ -2,12 +2,31 @@
   {
     "name": "Work type",
     "icon": "fa-solid fa-briefcase",
+    "emoji": "\uD83E\uDDD1\u200D\uD83D\uDCBC",
     "value": "Remote full/part-time"
   },
-  {"name": "Timezone", "icon": "fa-solid fa-clock", "value": "Europe/Kyiv"},
+  {
+    "name": "Timezone",
+    "icon": "fa-solid fa-clock",
+    "emoji": "⌚",
+    "value": "Europe/Kyiv"
+  },
   {
     "name": "Contact time",
+    "icon": "fa-solid fa-phone-volume",
+    "emoji": "\uD83D\uDCF3",
+    "value": "10:00 AM - 7:00 PM"
+  },
+  {
+    "name": "Working hours",
     "icon": "fa-solid fa-business-time",
-    "value": "8:00 AM - 8:00 PM"
+    "emoji": "\uD83D\uDC68\u200D\uD83D\uDCBB",
+    "value": "9:00 AM - 5:00 PM"
+  },
+  {
+    "name": "Priority customers",
+    "value": "Western Europe",
+    "emoji": "\uD83C\uDF0D",
+    "icon": "fa-solid fa-earth-europe"
   }
 ]

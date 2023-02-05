@@ -8,7 +8,7 @@
         "date": "December 2022",
         "title": "kostiantyn-salnykov.github.io",
         "icon": "fa-solid fa-lg fa-address-card",
-        "description": "A responsive resume site that is adapted to the printed version.",
+        "description": "A resume webpage that is responsive and can be printed.",
         "responsibilities": "Set up the configuration of Vite, ESLint, Prettier for this project, creating a dynamic generation for print. Site structure layout with Bulma, Front-end CI creation with GitHub Workflows.",
         "usedTechnologies": ["Vue.js 3", "Vite", "Bulma", "GitHub Actions", "ESLint", "Prettier"],
         "teamSize": "1",
@@ -21,7 +21,7 @@
         "date": "September 2022",
         "title": "E-University API",
         "icon": "fa-solid fa-lg fa-graduation-cap",
-        "description": "Open source project aims to help higher education institutions with student accommodation in hostels.",
+        "description": "The open source project aims to assist colleges and universities with student accommodation in hostels.",
         "responsibilities": "Architecture design ideas, technical consultation for the team members, code review.",
         "usedTechnologies": ["Python 3.8", "Docker", "FastAPI", "SQLAlchemy", "Alembic", "pytest"],
         "teamSize": "10-20",
@@ -68,8 +68,8 @@
         "date": "June 2022",
         "title": "MuseML (museml.com)",
         "icon": "fa-solid fa-lg fa-book",
-        "description": "A platform, that allows professional screenwriters to write, edit, and collaborate on screenplays. MuseML is based on generative machine-learning software with understanding of the creator's actual ideation by powering with smart recommendations writing by auto-suggesting plot ideas.",
-        "responsibilities": "Move existing alpha version of project from Heroku and Vercel to AWS, migrate existing data. Creating all the necessities so that the project can be developed and easily maintained. Performed DevOps tasks on deploying infrastructure and domains to AWS, set up AWS CDK (IaaC) to automatically deploy infrastructure. Move domains from GoDaddy to AWS Route 53. Set up Front-end deployments with AWS Amplify.",
+        "description": "Professional screenwriters can use this platform to compose, edit, and collaborate on screenplays. MuseML is based on generative machine-learning software that understands the creator's actual inspiration by empowering writing with smart recommendations by auto-suggesting plot ideas.",
+        "responsibilities": "Moved existing alpha version of project from Heroku and Vercel to AWS, migrate existing data. Created many changes so that the project can be easily maintained (modular structure). Performed DevOps tasks on deploying infrastructure and domains to AWS, set up AWS CDK (IaaC) to automatically deploy infrastructure. Moved domains from GoDaddy to AWS Route 53. Set up Front-end deployments with AWS Amplify.",
         "usedTechnologies": [
           "AWS",
           "AWS CDK",
@@ -105,7 +105,7 @@
           "migrate database from Heroku to RDS",
           "modular structure",
           "technical documentation with mkdocs",
-          "wrote unittests",
+          "setup pytest scratch",
           "deploy with AWS CDK",
           "configure logging system from scratch"
         ]
@@ -134,7 +134,7 @@
         "date": "October 2021",
         "title": "AMP Energy",
         "icon": "fa-solid fa-lg fa-plug-circle-check",
-        "description": "A platform for analyzing data from IoT devices for charts and events monitoring.",
+        "description": "A platform for analyzing data from IoT devices (smart electrical meters) for charts and events monitoring.",
         "responsibilities": "Built serverless architecture with AWS, design database schema, planning, estimation and development, made requirements for the project. Made ETL process using IoT Rule, Kinesis, S3, Lambda and Pandas. Was a lead developer for an international team. Distribute and manage tasks to developers and data engineers from other countries (India, Pakistan, UAE).",
         "usedTechnologies": [
           "Python 3.9",
@@ -158,9 +158,9 @@
           "diagrams.net (draw.io)"
         ],
         "teamSize": "10-20",
-        "positionInTeam": "Lead Software Engineer",
+        "positionInTeam": "Lead Software Engineer, Data Engineer",
         "customer": "\uD83C\uDDE6\uD83C\uDDEA (United Arab Emirates)",
-        "domain": "IoT, Serverless, High-load, ETL",
+        "domain": "IoT, Serverless, High-load",
         "achieved": ["AWS experience", "built ETL process", "manage international team", "tariff calculation system"]
       },
       {
@@ -267,7 +267,7 @@
         "date": "March 2020",
         "title": "HelpMed",
         "icon": "fa-solid fa-lg fa-truck-medical",
-        "description": "This is a web application created to help doctors and other healthcare professionals to get to work during the difficult time of quarantine.",
+        "description": "This is a web application created to help doctors and other healthcare professionals to get to work during the quarantine time.",
         "responsibilities": "From project initialization to release completed in a week. A database entities were modeled, Implemented a REST API for a mobile applications.",
         "usedTechnologies": ["Python 3.8", "Django 3.0", "Django REST framework", "PostgreSQL"],
         "teamSize": "5-10",
@@ -393,7 +393,7 @@
         "teamSize": "5-10",
         "positionInTeam": "Junior Python Developer",
         "customer": "\uD83C\uDDFA\uD83C\uDDF8 (USA)",
-        "domain": "Management, Planning, Office Tool",
+        "domain": "Management, Planning",
         "achieved": ["working with Flask", "working with MongoDB"]
       }
     ]

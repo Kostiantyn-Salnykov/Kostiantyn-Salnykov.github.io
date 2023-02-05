@@ -91,7 +91,7 @@
       },
       {
         "blockName": "Frameworks",
-        "items": [{"name": "Vue.js 3"}, {"name": "Quasar"}, {"name": "Bulma"}, {"name": "DRF"}]
+        "items": [{"name": "Vue.js 3"}, {"name": "Quasar"}, {"name": "Bulma"}]
       },
       {
         "blockName": "Tools & Libraries",
@@ -100,6 +100,7 @@
           {"name": "Vite"},
           {"name": "ESLint"},
           {"name": "Prettier"},
+          {"name": "tox"},
           {"name": "SQLAlchemy"},
           {"name": "Alembic"},
           {"name": "Pydantic"},
@@ -125,13 +126,16 @@
           {"name": "AWS CDK"},
           {"name": "S3"},
           {"name": "API Gateway"},
+          {"name": "SSM"},
           {"name": "Lambda"},
           {"name": "Amplify"},
           {"name": "SAM"},
           {"name": "Cognito"},
+          {"name": "SES"},
           {"name": "CloudFormation"},
           {"name": "ECR + ECS"},
           {"name": "IAM"},
+          {"name": "SQS"},
           {"name": "CodeCommit"},
           {"name": "RDS"},
           {"name": "DynamoDB"},
@@ -140,10 +144,7 @@
           {"name": "Route 53"},
           {"name": "CloudFront"},
           {"name": "CloudWatch"},
-          {"name": "EventBridge"},
-          {"name": "SSM"},
-          {"name": "SES"},
-          {"name": "SQS"}
+          {"name": "EventBridge"}
         ]
       },
       {
