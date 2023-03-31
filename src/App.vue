@@ -382,8 +382,10 @@
             <div class="content columns is-mobile">
               <ul class="column">
                 <template v-for="course in platform.courses" :key="course">
-                  <li v-if="course.proofLink" class="course" v-on:click="openLink(course.proofLink)">{{ course.name }}</li>
-                  <li v-else >{{ course.name }}</li>
+                  <li v-if="course.proofLink" class="course" v-on:click="openLink(course.proofLink)">
+                    {{ course.name }}
+                  </li>
+                  <li v-else>{{ course.name }}</li>
                 </template>
               </ul>
             </div>
