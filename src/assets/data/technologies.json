@@ -166,7 +166,7 @@
           {"name": "WebAssembly"},
           {"name": "Matplotlib"},
           {"name": "Reportlab"},
-          {"name": "Pandas"},
+          {"name": "Pandas (in depth)"},
           {"name": "Numpy"},
           {"name": "PyQT 6"}
         ]

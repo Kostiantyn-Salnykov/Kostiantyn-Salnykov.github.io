@@ -6,7 +6,7 @@
         <button
           class="button is-responsive is-outlined"
           @click="showPrintModal = true"
-          :class="[userTheme === 'dark-theme' ? 'is-primary' : 'is-danger', 'is-primary']"
+          :class="[userTheme === 'dark-theme' ? 'is-light' : 'is-dark', 'is-light']"
         >
           <span class="icon is-small"><i class="fa-solid fa-print"></i></span>
           <span>Print</span>
@@ -36,11 +36,7 @@
               <span class="icon is-small"><i class="fa-solid fa-tree"></i></span>
               <span>Thanks</span>
             </button>
-            <button
-              class="button"
-              @click="changeModal"
-              :class="[userTheme === 'dark-theme' ? 'is-primary' : 'is-danger', 'is-primary']"
-            >
+            <button class="button is-danger" @click="changeModal">
               <span class="icon is-small"><i class="fa-solid fa-print"></i></span>
               <span>Print</span>
             </button>
@@ -82,11 +78,7 @@
               <span class="icon is-small"><i class="fa-solid fa-tree"></i></span>
               <span>Back</span>
             </button>
-            <button
-              class="button"
-              @click="print"
-              :class="[userTheme === 'dark-theme' ? 'is-primary' : 'is-danger', 'is-primary']"
-            >
+            <button class="button is-danger" @click="print">
               <span class="icon is-small"><i class="fa-solid fa-print"></i></span>
               <span>Print</span>
             </button>
@@ -110,7 +102,7 @@
                     <a
                       :href="contact.type ? `${contact.type}:${contact.value}` : contact.value"
                       class="button is-responsive is-outlined"
-                      :class="[userTheme === 'dark-theme' ? 'is-primary' : 'is-danger', 'is-primary']"
+                      :class="[userTheme === 'dark-theme' ? 'is-light' : 'is-dark', 'is-light']"
                       target="_blank"
                     >
                       <span class="icon is-small"><i :class="contact.icon"></i></span>
@@ -119,14 +111,14 @@
                     <button
                       class="button is-responsive is-outlined"
                       @click="copy(contact.value)"
-                      :class="[userTheme === 'dark-theme' ? 'is-primary' : 'is-danger', 'is-primary']"
+                      :class="[userTheme === 'dark-theme' ? 'is-light' : 'is-dark', 'is-light']"
                     >
                       <span class="icon is-small"><i class="fa-regular fa-copy"></i></span>
                     </button>
                     <button
                       class="button is-responsive is-outlined"
                       @click="contact.modal = !contact.modal"
-                      :class="[userTheme === 'dark-theme' ? 'is-primary' : 'is-danger', 'is-primary']"
+                      :class="[userTheme === 'dark-theme' ? 'is-light' : 'is-dark', 'is-light']"
                     >
                       <span class="icon is-small"><i class="fa-solid fa-qrcode"></i></span>
                     </button>
@@ -161,7 +153,7 @@
             <button
               class="button is-small is-outlined"
               @click="readMoreAboutModal = !readMoreAboutModal"
-              :class="[userTheme === 'dark-theme' ? 'is-primary' : 'is-danger', 'is-primary']"
+              :class="[userTheme === 'dark-theme' ? 'is-light' : 'is-dark', 'is-light']"
             >
               Read more
             </button>
@@ -173,8 +165,10 @@
                   <button class="delete" aria-label="close" @click="readMoreAboutModal = false"></button>
                 </header>
                 <section class="modal-card-body has-text-black has-background">
-                  <div class="block image is-3by2">
-                    <img src="/src/assets/photo.jpg" alt="Photo" class="round" />
+                  <div class="is-flex is-align-content-center is-justify-content-center">
+                    <div class="block image is-4by4">
+                      <img src="/src/assets/Photo.jpg" alt="Photo" class="round photo" />
+                    </div>
                   </div>
                   <div class="block indent" v-html="p" v-for="p in aboutMeMore.paragraphs" :key="p"></div>
                   <div class="block">{{ aboutMeMore.dateOfBirth }}</div>
@@ -194,7 +188,7 @@
                   <span v-if="'emoji' in detail">{{ detail.emoji }}</span
                   >{{ detail.name }}: {{ detail.value }}
                 </p>
-                <p>({{ tzDateTime }})</p>
+                <p>🕙{{ tzDateTime }}</p>
               </template>
               <p v-else>
                 <span v-if="'emoji' in detail">{{ detail.emoji }}</span
@@ -256,7 +250,7 @@
                     <button
                       class="button is-outlined is-small"
                       @click="openModalById(project.title)"
-                      :class="[userTheme === 'dark-theme' ? 'is-primary' : 'is-danger', 'is-primary']"
+                      :class="[userTheme === 'dark-theme' ? 'is-light' : 'is-dark', 'is-light']"
                     >
                       Details
                     </button>
@@ -387,7 +381,10 @@
             <p class="title is-size-4 mb-1">{{ platform.name }}</p>
             <div class="content columns is-mobile">
               <ul class="column">
-                <li v-for="course in platform.courses" :key="course">{{ course.name }}</li>
+                <template v-for="course in platform.courses" :key="course">
+                  <li v-if="course.proofLink" class="course" v-on:click="openLink(course.proofLink)">{{ course.name }}</li>
+                  <li v-else >{{ course.name }}</li>
+                </template>
               </ul>
             </div>
           </div>
@@ -603,7 +600,8 @@ function getTime(timeZone) {
     minute: "numeric",
     second: "numeric",
   };
-  const formatter = new Intl.DateTimeFormat([], options);
+  const locale = window.navigator.userLanguage || window.navigator.language;
+  const formatter = new Intl.DateTimeFormat([locale], options);
   return formatter.format(new Date());
 }
 function setTime() {
@@ -636,6 +634,10 @@ function print() {
   });
 }
 
+function openLink(link) {
+  window.open(link, "_blink").focus();
+}
+
 const showPrintModal = ref(false);
 const showPrintOptionsModal = ref(false);
 const readMoreAboutModal = ref(false);
@@ -664,4 +666,11 @@ const education = ref(educationJSON);
 const courses = ref(coursesJSON);
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.photo {
+  width: 320px;
+}
+.course {
+  cursor: zoom-in;
+}
+</style>

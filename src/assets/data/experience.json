@@ -1,6 +1,6 @@
 [
   {
-    "heading": "Lead Software Engineer (Open Source)",
+    "heading": "Lead Software Engineer (open-source)",
     "fromDate": "September 2022",
     "toDate": "Present",
     "projects": [
@@ -9,7 +9,7 @@
         "title": "kostiantyn-salnykov.github.io",
         "icon": "fa-solid fa-lg fa-address-card",
         "description": "A resume webpage that is responsive and can be printed.",
-        "responsibilities": "Set up the configuration of Vite, ESLint, Prettier for this project, creating a dynamic generation for print. Site structure layout with Bulma, Front-end CI creation with GitHub Workflows.",
+        "responsibilities": "Set up the configuration of Vite, ESLint, Prettier for this project, creating dynamic generation for print. Site structure layout with Bulma, Front-end CI creation with GitHub Workflows.",
         "usedTechnologies": ["Vue.js 3", "Vite", "Bulma", "GitHub Actions", "ESLint", "Prettier"],
         "teamSize": "1",
         "positionInTeam": "Lead Software Engineer",
@@ -21,7 +21,7 @@
         "date": "September 2022",
         "title": "E-University API",
         "icon": "fa-solid fa-lg fa-graduation-cap",
-        "description": "The open source project aims to assist colleges and universities with student accommodation in hostels.",
+        "description": "The open-source project aims to assist colleges and universities with student accommodation in hostels.",
         "responsibilities": "Architecture design ideas, technical consultation for the team members, code review.",
         "usedTechnologies": ["Python 3.8", "Docker", "FastAPI", "SQLAlchemy", "Alembic", "pytest"],
         "teamSize": "10-20",

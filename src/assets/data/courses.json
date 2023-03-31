@@ -1,6 +1,7 @@
 [
   {
     "name": "MongoDB University",
+    "simpleList": true,
     "courses": [
       {
         "name": "M001: MongoDB Basics (July, 2018)",
@@ -41,6 +42,7 @@
   },
   {
     "name": "Sololearn",
+    "simpleList": true,
     "courses": [
       {
         "name": "Python 3 Tutorial",
@@ -71,6 +73,22 @@
         "name": "jQuery Tutorial",
         "image": "courses/sololearn/cert-1082-2389177.jpg",
         "proofLink": "https://www.sololearn.com/Certificate/1082-2389177/jpg/"
+      }
+    ]
+  },
+  {
+    "name": "Redis University",
+    "simpleList": true,
+    "courses": [
+      {
+        "name": "RU101: Introduction to Redis Data Structures (March, 2023)",
+        "image": "courses/redis/ru101.png",
+        "proofLink": "https://university.redis.com/certificates/83bdedae3d884d77853c3b13a533db9e"
+      },
+      {
+        "name": "RU102PY: Redis for Python Developers (March, 2023)",
+        "image": "courses/redis/ru102py.png",
+        "proofLink": "https://university.redis.com/certificates/aee4e8dfa84941cab63772d280894adc"
       }
     ]
   },
