@@ -226,7 +226,7 @@
                         <img
                           v-if="item.image"
                           class="image"
-                          :src="`/src/assets/icons/${item.image}`"
+                          :src="`/icons/${item.image}`"
                           width="15"
                           alt="Test"
                       /></a>
