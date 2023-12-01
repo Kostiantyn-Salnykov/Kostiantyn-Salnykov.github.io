@@ -1,8 +1,57 @@
 [
   {
+    "heading": "Edvantis LLC - Senior Software Engineer",
+    "fromDate": "April 2023",
+    "toDate": "Present",
+    "projects": [
+      {
+        "date": "October 2023",
+        "title": "Access Management (ITK)",
+        "icon": "fa-solid fa-lg fa-fingerprint",
+        "description": "Project for managing the access to different company's services.",
+        "responsibilities": "Design new approach for testing. Add new tests infrastructure. Write tests for existing functionality. Collaborate with DevOps team to improve developers experience working on a project.",
+        "usedTechnologies": ["Python 3.10", "Flask", "Pytest", "Unittest", "Docker", "PostgreSQL"],
+        "teamSize": "8-12",
+        "positionInTeam": "Senior Software Engineer, SDET",
+        "customer": "\uD83C\uDDE9\uD83C\uDDEA (Germany)",
+        "domain": "Employee management"
+      },
+      {
+        "date": "April 2023",
+        "title": "Unify (Gracehill)",
+        "icon": "fa-solid fa-lg fa-users-gear",
+        "description": "A set of microservices, that unifies other products of the company with event-driven approach.",
+        "responsibilities": "Creating new microservices, writing GraphQL schemas and APIs for AppSync. Deployment on EKS with Helm configurations. Creating python libraries for microservices. Write acceptance and unit tests.",
+        "usedTechnologies": [
+          "Python 3.10",
+          "FastAPI",
+          "Pydantic",
+          "GraphQL",
+          "Terraform",
+          "Docker",
+          "Pulsar",
+          "AWS",
+          "AppSync",
+          "S3",
+          "Cognito",
+          "Helm"
+        ],
+        "teamSize": "10",
+        "positionInTeam": "Senior Software Engineer",
+        "customer": "\uD83C\uDDFA\uD83C\uDDF8 (USA)",
+        "domain": "Company & employee management",
+        "achieved": [
+          "created new microservice for bulk operations loading",
+          "new DevOps skills (Terraform, Helm, Kubernetes)",
+          "experience with event-driven microservices"
+        ]
+      }
+    ]
+  },
+  {
     "heading": "Lead Software Engineer (open-source)",
     "fromDate": "September 2022",
-    "toDate": "Present",
+    "toDate": "April 2023",
     "projects": [
       {
         "date": "December 2022",

@@ -167,7 +167,7 @@
                 <section class="modal-card-body has-text-black has-background">
                   <div class="is-flex is-align-content-center is-justify-content-center">
                     <div class="block image is-4by4">
-                      <img src="/src/assets/Photo.jpg" alt="Photo" class="round photo" />
+                      <img src="/src/assets/photo.png" alt="Photo" class="round photo" />
                     </div>
                   </div>
                   <div class="block indent" v-html="p" v-for="p in aboutMeMore.paragraphs" :key="p"></div>
@@ -220,7 +220,20 @@
                 <p v-html="block.blockName + ': '" class="subtitle is-size-6 mt-2 mb-0"></p>
                 <div class="">
                   <template v-for="item in block.items" :key="item.name">
-                    <span class="tag is-info is-rounded is-outlined mr-1">{{ item.name }} {{ item.icon }}</span>
+                    <template v-if="item.link">
+                      <a class="tag is-info is-rounded is-outlined mr-1" target="_blank" :href="item.link"
+                        >{{ item.name }} {{ item.icon }}
+                        <img
+                          v-if="item.image"
+                          class="image"
+                          :src="`/src/assets/icons/${item.image}`"
+                          width="15"
+                          alt="Test"
+                      /></a>
+                    </template>
+                    <template v-else>
+                      <span class="tag is-info is-rounded is-outlined mr-1">{{ item.name }} {{ item.icon }}</span>
+                    </template>
                   </template>
                 </div>
               </template>

@@ -12,28 +12,31 @@
           {"name": "Automation", "icon": "⌨️\uD83D\uDDB1️"},
           {"name": "ETL", "icon": "\uD83D\uDDC3️"},
           {"name": "High-Load", "icon": "\uD83D\uDDC4️"},
-          {"name": "AWS", "icon": "☁️"},
-          {"name": "Python 3.7+", "icon": "\uD83D\uDC0D"},
-          {"name": "Rust", "icon": "\uD83E\uDD80"},
-          {"name": "FastAPI", "icon": ""},
-          {"name": "Starlette", "icon": ""},
-          {"name": "Sanic", "icon": ""},
-          {"name": "MongoDB", "icon": ""},
-          {"name": "PostgreSQL", "icon": ""},
-          {"name": "Redis", "icon": ""}
+          {"name": "DevOps", "icon": "\uD83D\uDD29"},
+          {"name": "Testing", "icon": "\uD83D\uDD27"},
+          {"name": "AWS", "icon": "", "link": "https://console.aws.amazon.com/", "image": "AWS.svg"},
+          {"name": "Python 3.7+", "icon": "", "link": "https://www.python.org/", "image": "python.svg"},
+          {"name": "Rust", "icon": "", "link": "https://www.rust-lang.org/", "image": "Rust.svg"},
+          {"name": "FastAPI", "icon": "", "link": "https://fastapi.tiangolo.com/", "image": "FastAPI.svg"},
+          {"name": "Starlette", "icon": "", "link": "https://www.starlette.io/"},
+          {"name": "Sanic", "icon": "", "link": "https://sanic.dev/en/"},
+          {"name": "MongoDB", "icon": "", "link": "https://www.mongodb.com/", "image": "MongoDB.svg"},
+          {"name": "PostgreSQL", "icon": "", "link": "https://www.postgresql.org/", "image": "PostgresSQL.svg"},
+          {"name": "Redis", "icon": "", "link": "https://redis.io/", "image": "Redis.svg"}
         ]
       },
       {
         "blockName": "<b>Not interested in</b>",
         "items": [
-          {"name": "Casinos", "icon": "\uD83C\uDFB0"},
+          {"name": "Casinos", "icon": "\uD83C\uDFB0\uD83C\uDCCF"},
           {"name": "Blockchain", "icon": "\uD83E\uDDF1⛓️"},
           {"name": "Betting", "icon": "\uD83C\uDCCF⚽"},
-          {"name": "Drugs", "icon": "\uD83D\uDC8A"},
+          {"name": "Drugs", "icon": "\uD83D\uDC8A\uD83D\uDC89"},
           {"name": "Weapons", "icon": "\uD83D\uDD2B\uD83D\uDE80"},
-          {"name": "Django", "icon": ""},
-          {"name": "Django REST Framework", "icon": ""},
-          {"name": "Flask", "icon": ""}
+          {"name": "GraphQL", "icon": "", "link": "https://graphql.org/", "image": "GraphQL.svg"},
+          {"name": "Django", "icon": "", "link": "https://www.djangoproject.com/", "image": "Django.svg"},
+          {"name": "DRF", "icon": "", "link": "https://www.django-rest-framework.org/", "image": "Django REST.svg"},
+          {"name": "Flask", "icon": "", "link": "https://flask.palletsprojects.com/", "image": "Flask.svg"}
         ]
       }
     ]
@@ -43,42 +46,81 @@
     "blocks": [
       {
         "blockName": "Programming Languages",
-        "items": [{"name": "Python 3.7+"}]
+        "items": [{"name": "Python 3.7+", "link": "https://www.python.org/", "image": "python.svg"}]
       },
       {
         "blockName": "Frameworks",
-        "items": [{"name": "FastAPI"}]
+        "items": [
+          {"name": "FastAPI", "link": "https://fastapi.tiangolo.com/", "image": "FastAPI.svg"},
+          {"name": "Pydantic", "link": "https://docs.pydantic.dev/latest/", "image": "pydantic.svg"}
+        ]
       },
-      {"blockName": "Cloud Technologies", "items": [{"name": "AWS"}]},
+      {
+        "blockName": "Cloud Technologies",
+        "items": [{"name": "AWS", "link": "https://console.aws.amazon.com/", "image": "AWS.svg"}]
+      },
       {
         "blockName": "Databases",
-        "items": [{"name": "MongoDB"}, {"name": "Redis"}]
+        "items": [
+          {"name": "MongoDB", "link": "https://www.mongodb.com/", "image": "MongoDB.svg"},
+          {"name": "Redis", "link": "https://redis.io/", "image": "Redis.svg"}
+        ]
       },
       {
         "blockName": "Code Quality",
         "items": [
-          {"name": "unittest + mock"},
-          {"name": "pytest + pytest-asyncio"},
-          {"name": "Faker"},
-          {"name": "factory_boy"}
+          {"name": "unittest", "link": "https://docs.python.org/3/library/unittest.html"},
+          {"name": "unittest.mock", "link": "https://docs.python.org/3/library/unittest.mock.html"},
+          {"name": "pytest", "link": "https://docs.pytest.org/en", "image": "pytest.svg"},
+          {"name": "pytest-asyncio", "link": "https://pytest-asyncio.readthedocs.io/en/stable/"},
+          {"name": "Faker", "link": "https://faker.readthedocs.io/en/stable/"},
+          {"name": "factory_boy", "link": "https://factoryboy.readthedocs.io/en/stable/"}
         ]
       },
       {
         "blockName": "Code Style",
-        "items": [{"name": "Black"}, {"name": "isort"}, {"name": "flake8"}, {"name": "pylint"}, {"name": "xenon"}]
+        "items": [
+          {"name": "Ruff", "link": "https://docs.astral.sh/ruff/"},
+          {"name": "Black", "link": "https://black.readthedocs.io/en/stable/"},
+          {"name": "isort", "link": "https://pycqa.github.io/isort/"},
+          {"name": "flake8", "link": "https://flake8.pycqa.org/en/stable/"},
+          {"name": "pylint", "link": "https://pylint.readthedocs.io/en/stable/"},
+          {"name": "xenon", "link": "https://xenon.readthedocs.io/en/latest/"}
+        ]
       },
       {
         "blockName": "Documentation",
         "items": [
-          {"name": "MkDocs + Material"},
-          {"name": "diagrams.net (draw.io)"},
-          {"name": "Markdown"},
-          {"name": "Napoleon docstrings (Google Style)"}
+          {"name": "MkDocs + Material", "link": "https://squidfunk.github.io/mkdocs-material/"},
+          {"name": "diagrams.net (draw.io)", "link": "https://app.diagrams.net/", "image": "Diagrams.net.svg"},
+          {"name": "Markdown", "link": "https://www.markdownguide.org/cheat-sheet/"},
+          {
+            "name": "Napoleon docstrings (Google Style)",
+            "link": "https://sphinxcontrib-napoleon.readthedocs.io/en/latest/index.html"
+          }
         ]
       },
       {
         "blockName": "Library build tools",
-        "items": [{"name": "Poetry"}, {"name": "pyproject.toml"}]
+        "items": [
+          {"name": "Poetry", "link": "https://python-poetry.org/", "image": "Python Poetry.svg"},
+          {"name": "pyproject.toml", "link": "https://python-poetry.org/docs/pyproject/"}
+        ]
+      },
+      {
+        "blockName": "DevOps & Deployment",
+        "items": [
+          {"name": "Terraform", "link": "https://www.terraform.io/", "image": "terraform.svg"},
+          {"name": "AWS CDK", "link": "https://docs.aws.amazon.com/cdk/api/v2/python/"},
+          {"name": "Docker", "link": "https://www.docker.com/", "image": "Docker.svg"},
+          {
+            "name": "GitHub Actions (workflows)",
+            "link": "https://docs.github.com/en/actions",
+            "image": "GitHub Actions.svg"
+          },
+          {"name": "ECR", "link": "https://eu-central-1.console.aws.amazon.com/ecr/repositories"},
+          {"name": "ECS", "link": "https://eu-central-1.console.aws.amazon.com/ecs/v2/clusters"}
+        ]
       }
     ]
   },
@@ -87,69 +129,87 @@
     "blocks": [
       {
         "blockName": "Programming Languages",
-        "items": [{"name": "Rust"}]
+        "items": [{"name": "Rust", "link": "https://www.rust-lang.org/", "image": "Rust.svg"}]
       },
       {
         "blockName": "Frameworks",
-        "items": [{"name": "Vue.js 3"}, {"name": "Quasar"}, {"name": "Bulma"}]
+        "items": [
+          {"name": "Vue.js 3", "link": "https://vuejs.org/", "image": "Vue.js.svg"},
+          {"name": "Quasar", "link": "https://quasar.dev/", "image": "Quasar.svg"},
+          {"name": "Bulma", "link": "https://bulma.io/", "image": "Bulma.svg"}
+        ]
       },
       {
         "blockName": "Tools & Libraries",
         "items": [
-          {"name": "Cargo"},
-          {"name": "Vite"},
-          {"name": "ESLint"},
-          {"name": "Prettier"},
-          {"name": "tox"},
-          {"name": "SQLAlchemy"},
-          {"name": "Alembic"},
-          {"name": "Pydantic"},
-          {"name": "Celery"},
-          {"name": "Docker"},
-          {"name": "docker-compose"},
-          {"name": "JWT"},
-          {"name": "Sentry"}
+          {"name": "Cargo", "link": "https://doc.rust-lang.org/cargo/", "image": "Cargo.svg"},
+          {"name": "Vite", "link": "https://vitejs.dev/", "image": "Vite.js.svg"},
+          {"name": "ESLint", "link": "https://eslint.org/", "image": "ESLint.svg"},
+          {"name": "Prettier", "link": "https://prettier.io/", "image": "Prettier.svg"},
+          {"name": "tox", "link": "https://tox.wiki/en/stable/"},
+          {"name": "SQLAlchemy", "link": "https://www.sqlalchemy.org/", "image": "SQLAlchemy.svg"},
+          {"name": "Alembic", "link": "https://alembic.sqlalchemy.org/en/latest/"},
+          {"name": "Celery", "link": "https://docs.celeryq.dev/en/stable/index.html", "image": "Celery.svg"},
+          {"name": "Docker", "link": "https://www.docker.com/", "image": "Docker.svg"},
+          {"name": "docker-compose", "link": "https://docs.docker.com/compose/"},
+          {"name": "JWT", "link": "https://jwt.io/", "image": "jwt.svg"},
+          {"name": "Sentry", "link": "https://sentry.io/welcome/", "image": "Sentry Light.svg"}
         ]
       },
       {
         "blockName": "APIs",
-        "items": [{"name": "Telegram"}, {"name": "Discord"}, {"name": "BankID"}]
+        "items": [
+          {"name": "Telegram", "link": "https://docs.aiogram.dev/en/stable/", "image": "telegram.svg"},
+          {"name": "Discord", "link": "https://discordpy.readthedocs.io/en/stable/api.html", "image": "Discord.svg"},
+          {"name": "BankID", "link": "https://www.bankid.com/en/", "image": "BankID.svg"}
+        ]
       },
       {
         "blockName": "Payment Systems",
-        "items": [{"name": "PayPal"}, {"name": "Twispay"}, {"name": "Nets Payment"}]
+        "items": [
+          {"name": "PayPal", "link": "https://developer.paypal.com/api/rest/", "image": "PayPal.svg"},
+          {"name": "Twispay", "link": "https://www.twispay.com/en", "image": "Twispay.svg"},
+          {"name": "Nets Payment", "link": "https://www.nets.eu/"}
+        ]
       },
       {
         "blockName": "AWS",
         "items": [
-          {"name": "CLI"},
-          {"name": "AWS CDK"},
-          {"name": "S3"},
-          {"name": "API Gateway"},
-          {"name": "SSM"},
-          {"name": "Lambda"},
-          {"name": "Amplify"},
-          {"name": "SAM"},
-          {"name": "Cognito"},
-          {"name": "SES"},
-          {"name": "CloudFormation"},
-          {"name": "ECR + ECS"},
-          {"name": "IAM"},
-          {"name": "SQS"},
-          {"name": "CodeCommit"},
-          {"name": "RDS"},
-          {"name": "DynamoDB"},
-          {"name": "Kinesis"},
-          {"name": "ElastiCache"},
-          {"name": "Route 53"},
-          {"name": "CloudFront"},
-          {"name": "CloudWatch"},
-          {"name": "EventBridge"}
+          {"name": "CLI", "link": "https://docs.aws.amazon.com/cli/"},
+          {"name": "S3", "link": "https://s3.console.aws.amazon.com/s3"},
+          {"name": "API Gateway", "link": "https://eu-central-1.console.aws.amazon.com/apigateway/main"},
+          {"name": "SSM", "link": "https://eu-central-1.console.aws.amazon.com/systems-manager/home"},
+          {"name": "Lambda", "link": "https://eu-central-1.console.aws.amazon.com/lambda/home"},
+          {"name": "Amplify", "link": "https://eu-central-1.console.aws.amazon.com/amplify/home"},
+          {"name": "SAM", "link": "https://docs.aws.amazon.com/serverless-application-model/"},
+          {"name": "Cognito", "link": "https://eu-central-1.console.aws.amazon.com/cognito/v2/home"},
+          {"name": "SES", "link": "https://eu-central-1.console.aws.amazon.com/ses/home"},
+          {"name": "CloudFormation", "link": "https://eu-central-1.console.aws.amazon.com/cloudformation/home"},
+          {"name": "ECR", "link": "https://eu-central-1.console.aws.amazon.com/ecr/repositories"},
+          {"name": "ECS", "link": "https://eu-central-1.console.aws.amazon.com/ecs/v2/clusters"},
+          {"name": "IAM", "link": "https://us-east-1.console.aws.amazon.com/iam/home"},
+          {"name": "SQS", "link": "https://eu-central-1.console.aws.amazon.com/sqs/v3/home"},
+          {
+            "name": "CodeCommit",
+            "link": "https://eu-central-1.console.aws.amazon.com/codesuite/codecommit/repositories"
+          },
+          {"name": "RDS", "link": "https://eu-central-1.console.aws.amazon.com/rds/home"},
+          {"name": "DynamoDB", "link": "https://eu-central-1.console.aws.amazon.com/dynamodbv2/home"},
+          {"name": "Kinesis", "link": "https://eu-central-1.console.aws.amazon.com/kinesis/home"},
+          {"name": "ElastiCache", "link": "https://eu-central-1.console.aws.amazon.com/elasticache/home"},
+          {"name": "Route 53", "link": "https://us-east-1.console.aws.amazon.com/route53/v2/home"},
+          {"name": "CloudFront", "link": "https://us-east-1.console.aws.amazon.com/cloudfront/v4/home"},
+          {"name": "CloudWatch", "link": "https://eu-central-1.console.aws.amazon.com/cloudwatch/home"},
+          {"name": "EventBridge", "link": "https://eu-central-1.console.aws.amazon.com/events/home"}
         ]
       },
       {
         "blockName": "GCP",
-        "items": [{"name": "Calendar API"}, {"name": "People API"}, {"name": "Open ID Connect"}]
+        "items": [
+          {"name": "Calendar API", "link": "https://developers.google.com/calendar"},
+          {"name": "People API", "link": "https://developers.google.com/people"},
+          {"name": "Open ID Connect", "link": "https://developers.google.com/identity/openid-connect/openid-connect"}
+        ]
       }
     ]
   },
@@ -158,22 +218,45 @@
     "blocks": [
       {
         "blockName": "Programming Languages",
-        "items": [{"name": "JavaScript"}]
+        "items": [
+          {
+            "name": "JavaScript",
+            "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+            "image": "JavaScript.svg"
+          }
+        ]
       },
       {
         "blockName": "Tools & Libraries",
         "items": [
-          {"name": "WebAssembly"},
-          {"name": "Matplotlib"},
-          {"name": "Reportlab"},
-          {"name": "Pandas (in depth)"},
-          {"name": "Numpy"},
-          {"name": "PyQT 6"}
+          {"name": "WebAssembly", "link": "https://www.rust-lang.org/ru/what/wasm", "image": "WebAssembly.svg"},
+          {"name": "Matplotlib", "link": "https://matplotlib.org/", "image": "Matplotlib.svg"},
+          {"name": "Reportlab", "link": "https://www.reportlab.com/"},
+          {"name": "Pandas (in depth)", "link": "https://pandas.pydata.org/", "image": "Pandas.svg"},
+          {"name": "Polars", "link": "https://pola.rs/", "image": "Polars.svg"},
+          {"name": "Numpy", "link": "https://numpy.org/", "image": "NumPy.svg"},
+          {
+            "name": "PyQT 6",
+            "link": "https://www.riverbankcomputing.com/static/Docs/PyQt6/",
+            "image": "Qt Framework.svg"
+          }
         ]
       },
-      {"blockName": "Databases", "items": [{"name": "PostgreSQL (in depth)"}]},
-      {"blockName": "Payment Systems", "items": [{"name": "Stripe"}]},
-      {"blockName": "Cloud Technologies", "items": [{"name": "GCP"}]}
+      {
+        "blockName": "Databases",
+        "items": [
+          {"name": "PostgreSQL (in depth)", "link": "https://www.postgresql.org/", "image": "PostgresSQL.svg"},
+          {"name": "InfluxDB", "link": "https://www.influxdata.com/", "image": "InfluxDB.svg"}
+        ]
+      },
+      {
+        "blockName": "Payment Systems",
+        "items": [{"name": "Stripe", "link": "https://stripe.com/docs/api", "image": "Stripe.svg"}]
+      },
+      {
+        "blockName": "Cloud Technologies",
+        "items": [{"name": "GCP", "link": "https://console.cloud.google.com/", "image": "Google Cloud.svg"}]
+      }
     ]
   }
 ]
