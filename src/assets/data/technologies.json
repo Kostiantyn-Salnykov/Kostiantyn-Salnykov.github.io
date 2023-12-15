@@ -95,7 +95,7 @@
           {"name": "diagrams.net (draw.io)", "link": "https://app.diagrams.net/", "image": "Diagrams.net.svg"},
           {"name": "Markdown", "link": "https://www.markdownguide.org/cheat-sheet/"},
           {
-            "name": "Napoleon docstrings (Google Style)",
+            "name": "Napoleon (Google Style)",
             "link": "https://sphinxcontrib-napoleon.readthedocs.io/en/latest/index.html"
           }
         ]
@@ -229,7 +229,7 @@
       {
         "blockName": "Tools & Libraries",
         "items": [
-          {"name": "WebAssembly", "link": "https://www.rust-lang.org/ru/what/wasm", "image": "WebAssembly.svg"},
+          {"name": "WebAssembly", "link": "https://www.rust-lang.org/what/wasm", "image": "WebAssembly.svg"},
           {"name": "Matplotlib", "link": "https://matplotlib.org/", "image": "Matplotlib.svg"},
           {"name": "Reportlab", "link": "https://www.reportlab.com/"},
           {"name": "Pandas (in depth)", "link": "https://pandas.pydata.org/", "image": "Pandas.svg"},
