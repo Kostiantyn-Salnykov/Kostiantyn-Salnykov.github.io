@@ -12,8 +12,8 @@
           <span>Print</span>
         </button>
         <button class="button is-responsive" @click="toggleTheme" :class="{'is-black': userTheme === 'light-theme'}">
-          <span class="icon is-small" v-if="userTheme === 'light-theme'"><i class="fa-solid fa-moon"></i></span>
-          <span class="icon is-small" v-else><i class="fa-solid fa-sun"></i></span>
+          <span class="icon is-small" v-if="userTheme === 'light-theme'"><i class="fa-regular fa-lightbulb"></i></span>
+          <span class="icon is-small" v-else><i class="fa-solid fa-lightbulb"></i></span>
         </button>
       </div>
       <div class="modal" :class="{'is-active': showPrintModal}">
@@ -223,12 +223,7 @@
                     <template v-if="item.link">
                       <a class="tag is-info is-rounded is-outlined mr-1" target="_blank" :href="item.link"
                         >{{ item.name }} {{ item.icon }}
-                        <img
-                          v-if="item.image"
-                          class="image"
-                          :src="`/icons/${item.image}`"
-                          width="15"
-                          alt="Test"
+                        <img v-if="item.image" class="image" :src="`/icons/${item.image}`" width="15" alt="Test"
                       /></a>
                     </template>
                     <template v-else>

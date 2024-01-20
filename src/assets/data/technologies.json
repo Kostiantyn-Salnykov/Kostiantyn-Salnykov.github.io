@@ -19,6 +19,7 @@
           {"name": "Rust", "icon": "", "link": "https://www.rust-lang.org/", "image": "Rust.svg"},
           {"name": "FastAPI", "icon": "", "link": "https://fastapi.tiangolo.com/", "image": "FastAPI.svg"},
           {"name": "Starlette", "icon": "", "link": "https://www.starlette.io/"},
+          {"name": "Litestar", "icon": "", "link": "https://litestar.dev/", "image": "Litestar.svg"},
           {"name": "Sanic", "icon": "", "link": "https://sanic.dev/en/"},
           {"name": "MongoDB", "icon": "", "link": "https://www.mongodb.com/", "image": "MongoDB.svg"},
           {"name": "PostgreSQL", "icon": "", "link": "https://www.postgresql.org/", "image": "PostgresSQL.svg"},
@@ -223,6 +224,16 @@
             "name": "JavaScript",
             "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
             "image": "JavaScript.svg"
+          }
+        ]
+      },
+      {
+        "blockName": "Frameworks",
+        "items": [
+          {
+            "name": "Litestar",
+            "link": "https://litestar.dev/",
+            "image": "Litestar.svg"
           }
         ]
       },
