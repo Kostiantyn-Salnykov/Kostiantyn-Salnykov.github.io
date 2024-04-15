@@ -55,8 +55,8 @@
               <div class="field">
                 <div class="control">
                   <template v-if="field_options.type === 'checkbox'">
-                    <label class="checkbox">
-                      <input type="checkbox" v-model="field_options.value" :disabled="field_options.is_disabled" />
+                    <label class="checkbox" :class="{'ml-4': field_options.isTabbed}">
+                      <input type="checkbox" v-model="field_options.value" :disabled="field_options.isDisabled" />
                       {{ field_name }}
                     </label>
                   </template>
@@ -481,21 +481,35 @@
         <h5 class="title is-size-5 mt-4 mb-1">
           {{ job.heading }} <span class="is-size-7">[{{ job.fromDate }} - {{ job.toDate }}]</span>
         </h5>
-        <!--        <h6 class="subtitle is-size-7 mb-1">{{ job.fromDate }} - {{ job.toDate }}</h6>-->
         <template v-for="project in job.projects" :key="project.title">
-          <h6 class="is-size-6 mb-0">
-            <u>Project</u>: {{ project.title }} <span class="is-size-7">[{{ project.date }}]</span>
-          </h6>
-          <!--          <h6 class="subtitle is-size-7 m-0"><u>Date</u>: {{ project.date }}</h6>-->
-          <p class="mb-1"><u>Description</u>: {{ project.description }}</p>
-          <!--          <p class="mb-1"><u>Responsibilities</u>: {{ project.responsibilities }}</p>-->
-          <!--          <p class="mb-1">-->
-          <!--            <u>Used Technologies</u>:-->
-          <!--            <template v-for="(tech, i) in project.usedTechnologies" :key="tech">-->
-          <!--              {{ tech }}<span v-if="i !== project.usedTechnologies.length - 1">, </span>-->
-          <!--              <span v-else>.</span>-->
-          <!--            </template>-->
-          <!--          </p>-->
+          <div class="avoid-break-inside">
+            <h6 class="is-size-6 mb-0">
+              <u>Project</u>: {{ project.title }} <span class="is-size-7">[{{ project.date }}]</span>
+            </h6>
+            <p class="mb-1" v-if="printOptions.Description.value"><u>Description</u>: {{ project.description }}</p>
+            <p class="mb-1" v-if="printOptions.Domain.value"><u>Domain</u>: {{ project.domain }}</p>
+            <p class="mb-1" v-if="printOptions['Team Size'].value"><u>Team size</u>: {{ project.teamSize }}</p>
+            <p class="mb-1" v-if="printOptions['Position in team'].value">
+              <u>Position in team</u>: {{ project.positionInTeam }}
+            </p>
+            <p class="mb-1" v-if="printOptions.Responsibilities.value">
+              <u>Responsibilities</u>: {{ project.responsibilities }}
+            </p>
+            <p class="mb-1" v-if="printOptions.Achieved.value">
+              <u>Achieved</u>:
+              <template v-for="(tech, i) in project.achieved" :key="tech">
+                {{ tech }}<span v-if="i !== project.achieved.length - 1">, </span>
+                <span v-else>.</span>
+              </template>
+            </p>
+            <p class="mb-1" v-if="printOptions['Used Technologies'].value">
+              <u>Used Technologies</u>:
+              <template v-for="(tech, i) in project.usedTechnologies" :key="tech">
+                {{ tech }}<span v-if="i !== project.usedTechnologies.length - 1">, </span>
+                <span v-else>.</span>
+              </template>
+            </p>
+          </div>
         </template>
       </template>
     </div>
@@ -518,7 +532,7 @@
     </div>
     <div class="content" v-show="printOptions['Additional Courses'].value">
       <h1 class="title has-text-centered is-size-4 mb-3">Additional Courses</h1>
-      <div class="columns is-multiline">
+      <div class="columns is-multiline avoid-break-inside">
         <template v-for="platform in courses" :key="platform.name">
           <div class="column is-half">
             <h1 class="subtitle is-size-6 mb-0"><u>Platform</u>: {{ platform.name }}</h1>
@@ -637,7 +651,7 @@ function changeModalBack() {
 
 function print() {
   showPrintModal.value = false;
-  showPrintOptionsModal.value = false;
+  showPrintOptionsModal.value = true;
   nextTick(() => {
     // Access updated DOM
     window.print();
@@ -652,15 +666,23 @@ const showPrintModal = ref(false);
 const showPrintOptionsModal = ref(false);
 const readMoreAboutModal = ref(false);
 const printOptions = ref({
-  Contacts: {value: true, type: "checkbox", is_disabled: true},
+  Contacts: {value: true, type: "checkbox", isDisabled: true},
   "About Me": {value: false, type: "checkbox"},
   Technologies: {value: true, type: "checkbox"},
   Experience: {value: true, type: "checkbox"},
+  Description: {value: true, type: "checkbox", isDisabled: true, isTabbed: true},
+  Domain: {value: false, type: "checkbox", isTabbed: true},
+  "Team Size": {value: false, type: "checkbox", isTabbed: true},
+  "Position in team": {value: false, type: "checkbox", isTabbed: true},
+  Achieved: {value: false, type: "checkbox", isTabbed: true},
+  Responsibilities: {value: false, type: "checkbox", isTabbed: true},
+  "Used Technologies": {value: false, type: "checkbox", isTabbed: true},
+  // "Extended experience": {options: [{name: "Yes", value: true}, {name: "No", value: false}], type: "radio"},
   Education: {value: false, type: "checkbox"},
   "Additional Courses": {value: false, type: "checkbox"},
 });
 
-const cvURL = ref("https://kostiantyn-salnykov.github.io/");
+const cvURL = ref("https://ksalnykov.com/");
 const fullName = ref("Kostiantyn Salnykov");
 const positionName = ref("Software Engineer");
 const positionLangs = ref("(Python 🐍, Rust 🦀)");

@@ -14,7 +14,12 @@
         "teamSize": "8-12",
         "positionInTeam": "Senior Software Engineer, SDET",
         "customer": "\uD83C\uDDE9\uD83C\uDDEA (Germany)",
-        "domain": "Employee management"
+        "domain": "Employee management",
+        "achieved": [
+          "made initial setup for pytest",
+          "wrote documentation & how-tos for testings",
+          "completed initial setup for API, functional, unit tests"
+        ]
       },
       {
         "date": "April 2023",

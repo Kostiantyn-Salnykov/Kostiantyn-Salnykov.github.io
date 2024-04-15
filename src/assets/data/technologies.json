@@ -63,8 +63,9 @@
       {
         "blockName": "Databases",
         "items": [
+          {"name": "Redis", "link": "https://redis.io/", "image": "Redis.svg"},
           {"name": "MongoDB", "link": "https://www.mongodb.com/", "image": "MongoDB.svg"},
-          {"name": "Redis", "link": "https://redis.io/", "image": "Redis.svg"}
+          {"name": "PostgreSQL", "link": "https://www.postgresql.org/", "image": "PostgresSQL.svg"}
         ]
       },
       {
@@ -119,8 +120,8 @@
             "link": "https://docs.github.com/en/actions",
             "image": "GitHub Actions.svg"
           },
-          {"name": "ECR", "link": "https://eu-central-1.console.aws.amazon.com/ecr/repositories"},
-          {"name": "ECS", "link": "https://eu-central-1.console.aws.amazon.com/ecs/v2/clusters"}
+          {"name": "ECR", "link": "https://docs.aws.amazon.com/ecr/"},
+          {"name": "ECS", "link": "https://docs.aws.amazon.com/ecs/"}
         ]
       }
     ]
@@ -177,31 +178,31 @@
         "blockName": "AWS",
         "items": [
           {"name": "CLI", "link": "https://docs.aws.amazon.com/cli/"},
-          {"name": "S3", "link": "https://s3.console.aws.amazon.com/s3"},
-          {"name": "API Gateway", "link": "https://eu-central-1.console.aws.amazon.com/apigateway/main"},
-          {"name": "SSM", "link": "https://eu-central-1.console.aws.amazon.com/systems-manager/home"},
-          {"name": "Lambda", "link": "https://eu-central-1.console.aws.amazon.com/lambda/home"},
-          {"name": "Amplify", "link": "https://eu-central-1.console.aws.amazon.com/amplify/home"},
-          {"name": "SAM", "link": "https://docs.aws.amazon.com/serverless-application-model/"},
-          {"name": "Cognito", "link": "https://eu-central-1.console.aws.amazon.com/cognito/v2/home"},
-          {"name": "SES", "link": "https://eu-central-1.console.aws.amazon.com/ses/home"},
-          {"name": "CloudFormation", "link": "https://eu-central-1.console.aws.amazon.com/cloudformation/home"},
-          {"name": "ECR", "link": "https://eu-central-1.console.aws.amazon.com/ecr/repositories"},
-          {"name": "ECS", "link": "https://eu-central-1.console.aws.amazon.com/ecs/v2/clusters"},
-          {"name": "IAM", "link": "https://us-east-1.console.aws.amazon.com/iam/home"},
-          {"name": "SQS", "link": "https://eu-central-1.console.aws.amazon.com/sqs/v3/home"},
+          {"name": "S3", "link": "https://docs.aws.amazon.com/s3/"},
+          {"name": "API Gateway", "link": "https://docs.aws.amazon.com/api-gateway/"},
+          {"name": "SSM", "link": "https://docs.aws.amazon.com/systems-manager/"},
+          {"name": "Lambda", "link": "https://docs.aws.amazon.com/lambda/"},
+          {"name": "Amplify", "link": "https://docs.aws.amazon.com/amplify/"},
+          {"name": "SAM", "link": "https://aws.amazon.com/serverless/sam/"},
+          {"name": "Cognito", "link": "https://aws.amazon.com/cognito/"},
+          {"name": "SES", "link": "https://docs.aws.amazon.com/ses/"},
+          {"name": "CloudFormation", "link": "https://docs.aws.amazon.com/cloudformation/"},
+          {"name": "ECR", "link": "https://docs.aws.amazon.com/ecr/"},
+          {"name": "ECS", "link": "https://docs.aws.amazon.com/ecs/"},
+          {"name": "IAM", "link": "https://docs.aws.amazon.com/iam/"},
+          {"name": "SQS", "link": "https://docs.aws.amazon.com/sqs/"},
           {
             "name": "CodeCommit",
-            "link": "https://eu-central-1.console.aws.amazon.com/codesuite/codecommit/repositories"
+            "link": "https://docs.aws.amazon.com/codecommit/"
           },
-          {"name": "RDS", "link": "https://eu-central-1.console.aws.amazon.com/rds/home"},
-          {"name": "DynamoDB", "link": "https://eu-central-1.console.aws.amazon.com/dynamodbv2/home"},
-          {"name": "Kinesis", "link": "https://eu-central-1.console.aws.amazon.com/kinesis/home"},
-          {"name": "ElastiCache", "link": "https://eu-central-1.console.aws.amazon.com/elasticache/home"},
-          {"name": "Route 53", "link": "https://us-east-1.console.aws.amazon.com/route53/v2/home"},
-          {"name": "CloudFront", "link": "https://us-east-1.console.aws.amazon.com/cloudfront/v4/home"},
-          {"name": "CloudWatch", "link": "https://eu-central-1.console.aws.amazon.com/cloudwatch/home"},
-          {"name": "EventBridge", "link": "https://eu-central-1.console.aws.amazon.com/events/home"}
+          {"name": "RDS", "link": "https://docs.aws.amazon.com/rds/"},
+          {"name": "DynamoDB", "link": "https://docs.aws.amazon.com/dynamodb/"},
+          {"name": "Kinesis", "link": "https://docs.aws.amazon.com/kinesis/"},
+          {"name": "ElastiCache", "link": "https://docs.aws.amazon.com/elasticache/"},
+          {"name": "Route 53", "link": "https://docs.aws.amazon.com/route53/"},
+          {"name": "CloudFront", "link": "https://docs.aws.amazon.com/cloudfront/"},
+          {"name": "CloudWatch", "link": "https://docs.aws.amazon.com/cloudwatch/"},
+          {"name": "EventBridge", "link": "https://docs.aws.amazon.com/eventbridge/"}
         ]
       },
       {

@@ -146,7 +146,7 @@ p.indent {
   }
   body {
     font: 12pt Georgia, "Times New Roman", Times, serif;
-    line-height: 1.3;
+    line-height: 1.2;
     margin: 0 !important;
     background: #fff none !important;
     color: #000 !important;
@@ -187,5 +187,17 @@ p.indent {
   ol,
   dl {
     page-break-before: avoid;
+  }
+
+  .avoid-break-before {
+    page-break-before: avoid;
+  }
+
+  .avoid-break-after {
+    page-break-after: avoid;
+  }
+
+  .avoid-break-inside {
+    page-break-inside: avoid;
   }
 }
