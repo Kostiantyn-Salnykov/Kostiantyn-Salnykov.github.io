@@ -51,6 +51,14 @@
             <button class="delete" aria-label="close" @click="showPrintOptionsModal = false"></button>
           </header>
           <section class="modal-card-body has-text-black is-flex is-flex-direction-column">
+            <div class="field">
+              <div class="control">
+                <label class="checkbox">
+                  <input type="checkbox" v-model="checkAll" @click="selectAll" />
+                  <b> {{ checkAll ? " Unselect all" : " Select all" }}</b>
+                </label>
+              </div>
+            </div>
             <template v-for="(field_options, field_name) in printOptions" :key="field_name">
               <div class="field">
                 <div class="control">
@@ -454,7 +462,13 @@
       <h1 class="title has-text-centered is-size-4 mb-3">Technologies</h1>
       <div class="columns is-multiline">
         <template v-for="category in technologies" :key="category.categoryName">
-          <div class="column is-half">
+          <div
+            class="column is-half"
+            v-if="
+              category.categoryName !== 'Preferences' ||
+              (category.categoryName === 'Preferences' && printOptions.Preferences.value)
+            "
+          >
             <h1 class="title is-size-5 mb-1">
               <u>{{ category.categoryName }}</u>
             </h1>
@@ -662,13 +676,26 @@ function openLink(link) {
   window.open(link, "_blink").focus();
 }
 
+function selectAll(event) {
+  const resultValue = !!event.target.checked;
+
+  for (const option in printOptions.value) {
+    if (printOptions.value[option].isDisabled) {
+      continue;
+    }
+    printOptions.value[option].value = resultValue;
+  }
+}
+
 const showPrintModal = ref(false);
 const showPrintOptionsModal = ref(false);
 const readMoreAboutModal = ref(false);
+const checkAll = ref(false);
 const printOptions = ref({
   Contacts: {value: true, type: "checkbox", isDisabled: true},
   "About Me": {value: false, type: "checkbox"},
   Technologies: {value: true, type: "checkbox"},
+  Preferences: {value: true, type: "checkbox", isTabbed: true},
   Experience: {value: true, type: "checkbox"},
   Description: {value: true, type: "checkbox", isDisabled: true, isTabbed: true},
   Domain: {value: false, type: "checkbox", isTabbed: true},
@@ -677,7 +704,6 @@ const printOptions = ref({
   Achieved: {value: false, type: "checkbox", isTabbed: true},
   Responsibilities: {value: false, type: "checkbox", isTabbed: true},
   "Used Technologies": {value: false, type: "checkbox", isTabbed: true},
-  // "Extended experience": {options: [{name: "Yes", value: true}, {name: "No", value: false}], type: "radio"},
   Education: {value: false, type: "checkbox"},
   "Additional Courses": {value: false, type: "checkbox"},
 });
