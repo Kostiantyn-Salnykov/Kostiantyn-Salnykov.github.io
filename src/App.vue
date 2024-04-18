@@ -118,7 +118,7 @@
                     </a>
                     <button
                       class="button is-responsive is-outlined"
-                      @click="copy(contact.value)"
+                      @click="copy($event, contact.value)"
                       :class="[userTheme === 'dark-theme' ? 'is-light' : 'is-dark', 'is-light']"
                     >
                       <span class="icon is-small"><i class="fa-regular fa-copy"></i></span>
@@ -564,7 +564,7 @@
 </template>
 
 <script setup>
-import {ref, nextTick, onBeforeMount, onMounted} from "vue";
+import { nextTick, onBeforeMount, onMounted, ref } from "vue";
 import QrcodeVue from "qrcode.vue";
 import contactsJSON from "./assets/data/contacts.json";
 import aboutMeJSON from "./assets/data/aboutMe.json";
@@ -586,9 +586,20 @@ function openModalById(id) {
   element.classList.add("is-active");
 }
 
-function copy(text) {
+function sleep(ms, callback) {
+  setTimeout(callback, ms);
+}
+
+function copy(event, text) {
+  const button = event.currentTarget;
+  button.classList.add("is-loading");
   navigator.clipboard.writeText(text).then(
-    function () {},
+    function () {
+      sleep(200, function(){
+        button.classList.remove("is-loading");
+        button.blur();
+      });
+    },
     function (err) {
       console.error("Error copy", err);
     }
